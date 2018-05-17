@@ -1,0 +1,923 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:"Georgia",serif;font-size:14.1px;color:rgb(255,207,39);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:"Georgia",serif;font-size:14.1px;color:rgb(255,207,39);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:"Georgia Bold",serif;font-size:8.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_003{font-family:"Georgia Bold",serif;font-size:8.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_004{font-family:"Georgia",serif;font-size:8.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:"Georgia",serif;font-size:8.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:6.0px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:6.0px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:"Georgia Bold",serif;font-size:28.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_007{font-family:"Georgia Bold",serif;font-size:28.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_009{font-family:"Georgia",serif;font-size:10.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:"Georgia",serif;font-size:10.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:9.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:9.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:12.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:12.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:10.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:10.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:"Georgia Italic",serif;font-size:10.1px;color:rgb(43,42,41);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_013{font-family:"Georgia Italic",serif;font-size:10.1px;color:rgb(43,42,41);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:10.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:10.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_006{font-family:"Georgia",serif;font-size:10.1px;color:rgb(50,61,133);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:"Georgia",serif;font-size:10.1px;color:rgb(50,61,133);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:"Georgia",serif;font-size:28.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:"Georgia",serif;font-size:28.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:"Georgia",serif;font-size:30.1px;color:rgb(118,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:"Georgia",serif;font-size:30.1px;color:rgb(118,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:"Georgia",serif;font-size:13.1px;color:rgb(50,61,133);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:"Georgia",serif;font-size:13.1px;color:rgb(50,61,133);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:"Georgia",serif;font-size:14.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:"Georgia",serif;font-size:14.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:8.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Arial,serif;font-size:8.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Arial,serif;font-size:8.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Arial,serif;font-size:8.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_020{font-family:"Georgia Bold",serif;font-size:10.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_020{font-family:"Georgia Bold",serif;font-size:10.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="818e5324-59b7-11e8-b174-0cc47a792c0a_id_818e5324-59b7-11e8-b174-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-297px;top:0px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="818e5324-59b7-11e8-b174-0cc47a792c0a_id_818e5324-59b7-11e8-b174-0cc47a792c0a_files/background1.jpg" width=595 height=841></div>
+<div style="position:absolute;left:35.28px;top:11.70px" class="cls_002"><span class="cls_002">W</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:851px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="818e5324-59b7-11e8-b174-0cc47a792c0a_id_818e5324-59b7-11e8-b174-0cc47a792c0a_files/background2.jpg" width=595 height=841></div>
+<div style="position:absolute;left:507.88px;top:12.61px" class="cls_003"><span class="cls_003">NRC</span><span class="cls_004">Weekend</span></div>
+<div style="position:absolute;left:35.28px;top:11.70px" class="cls_002"><span class="cls_002">Weekend</span></div>
+<div style="position:absolute;left:381.23px;top:22.62px" class="cls_005"><span class="cls_005">SATURDAY 24 SEPTEMBER & SUNDAY 25 SEPTEMBER 2016</span></div>
+<div style="position:absolute;left:36.00px;top:52.34px" class="cls_007"><span class="cls_007">Patients were unaware of the study</span></div>
+<div style="position:absolute;left:327.64px;top:109.73px" class="cls_009"><span class="cls_009">Dean and board member of the Erasmus MC, Jaap</span></div>
+<div style="position:absolute;left:36.16px;top:113.75px" class="cls_008"><span class="cls_008">ERASMUS MEDICAL CENTER</span></div>
+<div style="position:absolute;left:315.64px;top:121.73px" class="cls_009"><span class="cls_009">Verweij, does not agree that the patients needed to be</span></div>
+<div style="position:absolute;left:315.64px;top:133.73px" class="cls_009"><span class="cls_009">informed. He believes that the study was not carried</span></div>
+<div style="position:absolute;left:36.00px;top:137.15px" class="cls_010"><span class="cls_010">Heart patients participated in a clinical</span></div>
+<div style="position:absolute;left:315.64px;top:145.73px" class="cls_009"><span class="cls_009">out on the patients themselves, though “on the patients’</span></div>
+<div style="position:absolute;left:36.00px;top:151.55px" class="cls_010"><span class="cls_010">trial without their knowledge. The trial was</span></div>
+<div style="position:absolute;left:315.64px;top:157.73px" class="cls_009"><span class="cls_009">files”. It is for this reason that the patients were not</span></div>
+<div style="position:absolute;left:36.00px;top:165.95px" class="cls_010"><span class="cls_010">to test a new surgical procedure which</span></div>
+<div style="position:absolute;left:315.64px;top:169.73px" class="cls_009"><span class="cls_009">extra burdened and why the study does not fall within</span></div>
+<div style="position:absolute;left:36.00px;top:180.35px" class="cls_010"><span class="cls_010">had not yet been deemed safe for use.</span></div>
+<div style="position:absolute;left:315.64px;top:181.73px" class="cls_009"><span class="cls_009">the scope of the law, he argues.</span></div>
+<div style="position:absolute;left:327.64px;top:193.73px" class="cls_009"><span class="cls_009">The hospital’s professor Luc Jordaens is now of the</span></div>
+<div style="position:absolute;left:36.00px;top:206.35px" class="cls_011"><span class="cls_011">By our reporters</span></div>
+<div style="position:absolute;left:315.64px;top:205.73px" class="cls_009"><span class="cls_009">opinion that the hospital </span><span class="cls_013">should</span><span class="cls_009"> have submitted the</span></div>
+<div style="position:absolute;left:36.00px;top:218.35px" class="cls_012"><span class="cls_012">Karel Berkhout </span><span class="cls_011">and </span><span class="cls_012">Esther Rosenberg</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:315.64px;top:217.73px" class="cls_009"><span class="cls_009">study for review to a committee. He only told a few</span></div>
+<div style="position:absolute;left:36.00px;top:230.35px" class="cls_011"><span class="cls_011">24th September 2016</span></div>
+<div style="position:absolute;left:315.64px;top:229.73px" class="cls_009"><span class="cls_009">patients that they were participating in a clinical trial.</span></div>
+<div style="position:absolute;left:315.64px;top:241.73px" class="cls_009"><span class="cls_009">“If I had somebody who just said ‘You are the doctor. Do</span></div>
+<div style="position:absolute;left:48.00px;top:254.35px" class="cls_012"><span class="cls_012">ROTTERDAM</span><span class="cls_009">. In the Erasmus Medical Center in</span></div>
+<div style="position:absolute;left:315.64px;top:253.73px" class="cls_009"><span class="cls_009">what you need to do’, then you don’t have to tell them</span></div>
+<div style="position:absolute;left:36.00px;top:266.35px" class="cls_009"><span class="cls_009">Rotterdam 141 heart patients took part in a clinical</span></div>
+<div style="position:absolute;left:315.64px;top:265.73px" class="cls_009"><span class="cls_009">everything.”</span></div>
+<div style="position:absolute;left:36.00px;top:278.35px" class="cls_009"><span class="cls_009">trial without their knowledge. This is a breach of law</span></div>
+<div style="position:absolute;left:327.64px;top:277.73px" class="cls_009"><span class="cls_009">The balloon came on the market in July 2005. A</span></div>
+<div style="position:absolute;left:36.00px;top:290.35px" class="cls_009"><span class="cls_009">according to experts. The patients were operated on</span></div>
+<div style="position:absolute;left:315.64px;top:289.73px" class="cls_009"><span class="cls_009">month later all Erasmus MC patients who suffered</span></div>
+<div style="position:absolute;left:36.00px;top:302.35px" class="cls_009"><span class="cls_009">using a new procedure despite no-one yet knowing</span></div>
+<div style="position:absolute;left:315.64px;top:301.73px" class="cls_009"><span class="cls_009">from a certain type of heart rhythm condition were</span></div>
+<div style="position:absolute;left:36.00px;top:314.35px" class="cls_009"><span class="cls_009">whether the method was safe.</span></div>
+<div style="position:absolute;left:315.64px;top:313.73px" class="cls_009"><span class="cls_009">only operated on using the balloon. This decision was</span></div>
+<div style="position:absolute;left:48.00px;top:326.35px" class="cls_009"><span class="cls_009">This finding was the result of an investigation by</span></div>
+<div style="position:absolute;left:315.64px;top:325.73px" class="cls_009"><span class="cls_009">made on the basis of ‘common sense’, according to the</span></div>
+<div style="position:absolute;left:36.00px;top:338.35px" class="cls_009"><span class="cls_009">the Dutch leading newspaper, the NRC. The patients</span></div>
+<div style="position:absolute;left:315.64px;top:337.73px" class="cls_009"><span class="cls_009">hospital. However, the cardiologist involved, Yves van</span></div>
+<div style="position:absolute;left:36.00px;top:350.35px" class="cls_009"><span class="cls_009">suffered  from  atrial  fibrillation  and  were  operated</span></div>
+<div style="position:absolute;left:315.64px;top:349.73px" class="cls_009"><span class="cls_009">Belle, thinks that it was also done to be able to enter</span></div>
+<div style="position:absolute;left:36.00px;top:362.35px" class="cls_009"><span class="cls_009">on using a newly developed cryoballoon, an ablation</span></div>
+<div style="position:absolute;left:315.64px;top:361.73px" class="cls_009"><span class="cls_009">enough patients in the trial.</span></div>
+<div style="position:absolute;left:36.00px;top:374.35px" class="cls_009"><span class="cls_009">catheter  with  a  balloon  at  the  end  which  is  filled</span></div>
+<div style="position:absolute;left:36.00px;top:386.35px" class="cls_009"><span class="cls_009">with a coolant. The patients also had to monitor and</span></div>
+<div style="position:absolute;left:327.64px;top:385.73px" class="cls_009"><span class="cls_009">According to the lawyer of one of the patients, Maya</span></div>
+<div style="position:absolute;left:36.00px;top:398.35px" class="cls_009"><span class="cls_009">forward their heart rhythm every day for four months.</span></div>
+<div style="position:absolute;left:315.64px;top:397.73px" class="cls_009"><span class="cls_009">Spetter, “a crime has been committed”. She is currently</span></div>
+<div style="position:absolute;left:36.00px;top:410.35px" class="cls_009"><span class="cls_009">It concerned a study into ‘the safety’ and ‘feasibility’</span></div>
+<div style="position:absolute;left:315.64px;top:409.73px" class="cls_009"><span class="cls_009">preparing a legal procedure against those involved.</span></div>
+<div style="position:absolute;left:36.00px;top:422.35px" class="cls_009"><span class="cls_009">of the balloon, the cardiologists wrote afterwards in a</span></div>
+<div style="position:absolute;left:36.00px;top:434.35px" class="cls_009"><span class="cls_009">publication. The study took place between August 2005</span></div>
+<div style="position:absolute;left:315.64px;top:433.73px" class="cls_012"><span class="cls_012">[+] Complications: page 22-23</span></div>
+<div style="position:absolute;left:36.00px;top:446.35px" class="cls_009"><span class="cls_009">and August 2007. To this day, two patients still suffer</span></div>
+<div style="position:absolute;left:36.00px;top:458.35px" class="cls_009"><span class="cls_009">from  the consequences of the complications which</span></div>
+<div style="position:absolute;left:36.00px;top:470.35px" class="cls_009"><span class="cls_009">arose during the surgery.</span></div>
+<div style="position:absolute;left:48.00px;top:482.35px" class="cls_009"><span class="cls_009">The  Dutch  Medical  Research  Involving  Human</span></div>
+<div style="position:absolute;left:36.00px;top:494.35px" class="cls_009"><span class="cls_009">Subjects  Act</span></div>
+<div style="position:absolute;left:103.08px;top:494.35px" class="cls_009"><span class="cls_009">(Dutch  abbr.  WMO)  states  that  an</span></div>
+<div style="position:absolute;left:36.00px;top:506.35px" class="cls_009"><span class="cls_009">accredited medical research ethics committee must first</span></div>
+<div style="position:absolute;left:36.00px;top:518.35px" class="cls_009"><span class="cls_009">approve a research with human subjects. It also states</span></div>
+<div style="position:absolute;left:36.00px;top:530.35px" class="cls_009"><span class="cls_009">that patients must first sign a form stating that they are</span></div>
+<div style="position:absolute;left:36.00px;top:542.35px" class="cls_009"><span class="cls_009">aware that they are participating in the study and that</span></div>
+<div style="position:absolute;left:36.00px;top:554.35px" class="cls_009"><span class="cls_009">they consent to this. That didn’t happen in this case.</span></div>
+<div style="position:absolute;left:48.00px;top:566.35px" class="cls_009"><span class="cls_009">According  to  professor  of  medical  law,  Johan</span></div>
+<div style="position:absolute;left:36.00px;top:578.35px" class="cls_009"><span class="cls_009">Legemaate, the study fell within the scope of this law.</span></div>
+<div style="position:absolute;left:36.00px;top:590.35px" class="cls_009"><span class="cls_009">After all, it was to test “a new technique, whereby a device</span></div>
+<div style="position:absolute;left:36.00px;top:602.35px" class="cls_009"><span class="cls_009">is placed in the body of the patients.” The then director</span></div>
+<div style="position:absolute;left:36.00px;top:614.35px" class="cls_009"><span class="cls_009">of the umbrella organization of medical research ethics</span></div>
+<div style="position:absolute;left:36.00px;top:626.35px" class="cls_009"><span class="cls_009">committees (Dutch abbr: CCMO), Marcel Kenter, also</span></div>
+<div style="position:absolute;left:36.00px;top:638.35px" class="cls_009"><span class="cls_009">believes that the study fell under this law.</span></div>
+<div style="position:absolute;left:565.28px;top:812.56px" class="cls_006"><span class="cls_006">2</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:1702px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="818e5324-59b7-11e8-b174-0cc47a792c0a_id_818e5324-59b7-11e8-b174-0cc47a792c0a_files/background3.jpg" width=595 height=841></div>
+<div style="position:absolute;left:35.28px;top:11.70px" class="cls_002"><span class="cls_002">Weekend</span></div>
+<div style="position:absolute;left:36.00px;top:52.29px" class="cls_014"><span class="cls_014">Absolutely</span></div>
+<div style="position:absolute;left:36.00px;top:85.89px" class="cls_014"><span class="cls_014">no chance of any</span></div>
+<div style="position:absolute;left:36.00px;top:119.49px" class="cls_007"><span class="cls_007">complications</span></div>
+<div style="position:absolute;left:36.16px;top:170.89px" class="cls_008"><span class="cls_008">MEDICAL RESEARCH</span></div>
+<div style="position:absolute;left:36.00px;top:194.29px" class="cls_010"><span class="cls_010">Doctors from the Erasmus MC in</span></div>
+<div style="position:absolute;left:36.00px;top:208.69px" class="cls_010"><span class="cls_010">Rotterdam studied the effectiveness</span></div>
+<div style="position:absolute;left:36.00px;top:223.09px" class="cls_010"><span class="cls_010">and the safety of a new surgical</span></div>
+<div style="position:absolute;left:36.00px;top:237.49px" class="cls_010"><span class="cls_010">instrument for atrial fibrillation,</span></div>
+<div style="position:absolute;left:36.00px;top:251.89px" class="cls_010"><span class="cls_010">without the patients knowledge. The</span></div>
+<div style="position:absolute;left:36.00px;top:266.29px" class="cls_010"><span class="cls_010">cardiologist: “If I just had a patient</span></div>
+<div style="position:absolute;left:36.00px;top:280.69px" class="cls_010"><span class="cls_010">who said: ‘You are the doctor’ then I</span></div>
+<div style="position:absolute;left:36.00px;top:295.09px" class="cls_010"><span class="cls_010">didn’t tell him.”</span></div>
+<div style="position:absolute;left:36.00px;top:399.16px" class="cls_011"><span class="cls_011">By our reporters</span></div>
+<div style="position:absolute;left:36.00px;top:411.16px" class="cls_012"><span class="cls_012">Karel Berkhout </span><span class="cls_011">and </span><span class="cls_012">Esther Rosenberg</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:36.00px;top:423.16px" class="cls_011"><span class="cls_011">24th September 2016</span></div>
+<div style="position:absolute;left:189.00px;top:445.84px" class="cls_009"><span class="cls_009">he is operated on. The surgical</span></div>
+<div style="position:absolute;left:189.00px;top:457.84px" class="cls_009"><span class="cls_009">procedure    has    no    known</span></div>
+<div style="position:absolute;left:36.00px;top:440.97px" class="cls_015"><span class="cls_015">H</span></div>
+<div style="position:absolute;left:60.45px;top:460.97px" class="cls_009"><span class="cls_009">ans Westerweel prepares</span></div>
+<div style="position:absolute;left:189.00px;top:469.84px" class="cls_009"><span class="cls_009">complications,   the   professor</span></div>
+<div style="position:absolute;left:36.00px;top:472.97px" class="cls_009"><span class="cls_009">clay in his studio in the village</span></div>
+<div style="position:absolute;left:189.00px;top:481.84px" class="cls_009"><span class="cls_009">told him in a consultation in</span></div>
+<div style="position:absolute;left:36.00px;top:484.97px" class="cls_009"><span class="cls_009">of  Tholen  in  the  south-west</span></div>
+<div style="position:absolute;left:189.00px;top:493.84px" class="cls_009"><span class="cls_009">his  office.  The  surgeon  also</span></div>
+<div style="position:absolute;left:36.00px;top:496.97px" class="cls_009"><span class="cls_009">of the Netherlands, when his</span></div>
+<div style="position:absolute;left:189.00px;top:505.84px" class="cls_009"><span class="cls_009">assures him. There will be a few</span></div>
+<div style="position:absolute;left:36.00px;top:508.97px" class="cls_009"><span class="cls_009">heart starts beating rapidly for</span></div>
+<div style="position:absolute;left:189.00px;top:517.84px" class="cls_009"><span class="cls_009">drops of blood at the most. Two</span></div>
+<div style="position:absolute;left:36.00px;top:520.97px" class="cls_009"><span class="cls_009">the first time. A heart rhythm</span></div>
+<div style="position:absolute;left:189.00px;top:529.84px" class="cls_009"><span class="cls_009">nights in hospital after which he</span></div>
+<div style="position:absolute;left:36.00px;top:532.97px" class="cls_009"><span class="cls_009">condition,  is  what  the  doctor</span></div>
+<div style="position:absolute;left:189.00px;top:541.84px" class="cls_009"><span class="cls_009">can return home. It turns out</span></div>
+<div style="position:absolute;left:36.00px;top:544.97px" class="cls_009"><span class="cls_009">declares when Hans is admitted</span></div>
+<div style="position:absolute;left:189.00px;top:553.84px" class="cls_009"><span class="cls_009">differently. The surgical report</span></div>
+<div style="position:absolute;left:36.00px;top:556.97px" class="cls_009"><span class="cls_009">to the emergency room. More</span></div>
+<div style="position:absolute;left:189.00px;top:565.84px" class="cls_009"><span class="cls_009">is frightening. His pulmonary</span></div>
+<div style="position:absolute;left:36.00px;top:568.97px" class="cls_009"><span class="cls_009">specifically,   atrial   fibrillation.</span></div>
+<div style="position:absolute;left:189.00px;top:577.84px" class="cls_009"><span class="cls_009">artery  ruptures.  The  bleeding</span></div>
+<div style="position:absolute;left:36.00px;top:580.97px" class="cls_009"><span class="cls_009">His  heart  will  receive  these</span></div>
+<div style="position:absolute;left:189.00px;top:589.84px" class="cls_009"><span class="cls_009">“persists”. “Surgical assistance”</span></div>
+<div style="position:absolute;left:36.00px;top:592.97px" class="cls_009"><span class="cls_009">impulses more often which will</span></div>
+<div style="position:absolute;left:189.00px;top:601.84px" class="cls_009"><span class="cls_009">is  called  for.  The  patient  is</span></div>
+<div style="position:absolute;left:36.00px;top:604.97px" class="cls_009"><span class="cls_009">cause   disruption,   the   doctor</span></div>
+<div style="position:absolute;left:189.00px;top:613.84px" class="cls_009"><span class="cls_009">moved    to    the</span></div>
+<div style="position:absolute;left:283.44px;top:613.84px" class="cls_009"><span class="cls_009">“operating</span></div>
+<div style="position:absolute;left:36.00px;top:616.97px" class="cls_009"><span class="cls_009">warns.  Nothing  to  worry  too</span></div>
+<div style="position:absolute;left:189.00px;top:625.84px" class="cls_009"><span class="cls_009">theater”.    The    situation    is</span></div>
+<div style="position:absolute;left:36.00px;top:628.97px" class="cls_009"><span class="cls_009">much about. Medication helps</span></div>
+<div style="position:absolute;left:189.00px;top:637.84px" class="cls_009"><span class="cls_009">life-threatening.   When   he   is</span></div>
+<div style="position:absolute;left:36.00px;top:640.97px" class="cls_009"><span class="cls_009">for a while.</span></div>
+<div style="position:absolute;left:189.00px;top:649.84px" class="cls_009"><span class="cls_009">brought  into  theater  he  still</span></div>
+<div style="position:absolute;left:48.00px;top:652.97px" class="cls_009"><span class="cls_009">The artist is then 54 years</span></div>
+<div style="position:absolute;left:189.00px;top:661.84px" class="cls_009"><span class="cls_009">has a “rhythm though there is</span></div>
+<div style="position:absolute;left:36.00px;top:664.97px" class="cls_009"><span class="cls_009">old, teaches Dutch at a college</span></div>
+<div style="position:absolute;left:189.00px;top:673.84px" class="cls_009"><span class="cls_009">no output”. He is “externally”</span></div>
+<div style="position:absolute;left:36.00px;top:676.97px" class="cls_009"><span class="cls_009">and often travels with friends</span></div>
+<div style="position:absolute;left:189.00px;top:685.84px" class="cls_009"><span class="cls_009">massaged. The pericardial sac</span></div>
+<div style="position:absolute;left:36.00px;top:688.97px" class="cls_009"><span class="cls_009">to remote areas in Norway. He</span></div>
+<div style="position:absolute;left:189.00px;top:697.84px" class="cls_009"><span class="cls_009">is opened “urgently”. “A large</span></div>
+<div style="position:absolute;left:36.00px;top:700.97px" class="cls_009"><span class="cls_009">wants to get rid of the impulses,</span></div>
+<div style="position:absolute;left:189.00px;top:709.84px" class="cls_009"><span class="cls_009">amount of clear red blood is</span></div>
+<div style="position:absolute;left:36.00px;top:712.97px" class="cls_009"><span class="cls_009">the  fear  of  a  stroke  and  the</span></div>
+<div style="position:absolute;left:189.00px;top:721.84px" class="cls_009"><span class="cls_009">released under high pressure.”</span></div>
+<div style="position:absolute;left:36.00px;top:724.97px" class="cls_009"><span class="cls_009">terrible fatigue. He is referred</span></div>
+<div style="position:absolute;left:189.00px;top:733.84px" class="cls_009"><span class="cls_009">There  appears  to  be  “a  large</span></div>
+<div style="position:absolute;left:36.00px;top:736.97px" class="cls_009"><span class="cls_009">to  professor  Luc  Jordaens  at</span></div>
+<div style="position:absolute;left:189.00px;top:745.84px" class="cls_009"><span class="cls_009">perforation  in  the  upper  left</span></div>
+<div style="position:absolute;left:36.00px;top:748.97px" class="cls_009"><span class="cls_009">the   Rotterdam   Erasmus   MC</span></div>
+<div style="position:absolute;left:189.00px;top:757.84px" class="cls_009"><span class="cls_009">pulmonary artery. After many</span></div>
+<div style="position:absolute;left:36.00px;top:760.97px" class="cls_009"><span class="cls_009">who says he can treat him. He</span></div>
+<div style="position:absolute;left:189.00px;top:769.84px" class="cls_009"><span class="cls_009">hours the chest is closed “with</span></div>
+<div style="position:absolute;left:36.00px;top:772.97px" class="cls_009"><span class="cls_009">consults him three times.</span></div>
+<div style="position:absolute;left:189.00px;top:781.84px" class="cls_009"><span class="cls_009">seven steel threads”.</span></div>
+<div style="position:absolute;left:48.00px;top:784.97px" class="cls_009"><span class="cls_009">On the 27th of February 2007</span></div>
+<div style="position:absolute;left:565.28px;top:812.56px" class="cls_006"><span class="cls_006">3</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:2553px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="818e5324-59b7-11e8-b174-0cc47a792c0a_id_818e5324-59b7-11e8-b174-0cc47a792c0a_files/background4.jpg" width=595 height=841></div>
+<div style="position:absolute;left:507.88px;top:12.61px" class="cls_003"><span class="cls_003">NRC</span><span class="cls_004">Weekend</span></div>
+<div style="position:absolute;left:35.28px;top:11.70px" class="cls_002"><span class="cls_002">Weekend</span></div>
+<div style="position:absolute;left:381.23px;top:22.62px" class="cls_005"><span class="cls_005">SATURDAY 24 SEPTEMBER & SUNDAY 25 SEPTEMBER 2016</span></div>
+<div style="position:absolute;left:48.00px;top:56.67px" class="cls_009"><span class="cls_009">Westerweel regains conscious-</span></div>
+<div style="position:absolute;left:222.43px;top:56.67px" class="cls_009"><span class="cls_009">Rotterdam Erasmus MC studied</span></div>
+<div style="position:absolute;left:408.85px;top:56.67px" class="cls_009"><span class="cls_009">that   this   condition   could   be</span></div>
+<div style="position:absolute;left:36.00px;top:68.67px" class="cls_009"><span class="cls_009">ness after two days in intensive</span></div>
+<div style="position:absolute;left:222.43px;top:68.67px" class="cls_009"><span class="cls_009">the safety and effectiveness of the</span></div>
+<div style="position:absolute;left:408.85px;top:68.67px" class="cls_009"><span class="cls_009">treated with frost instead of fire,</span></div>
+<div style="position:absolute;left:36.00px;top:80.67px" class="cls_009"><span class="cls_009">care. Cardiologist Yves van Belle,</span></div>
+<div style="position:absolute;left:222.43px;top:80.67px" class="cls_009"><span class="cls_009">cryoballoon without the patients</span></div>
+<div style="position:absolute;left:408.85px;top:80.67px" class="cls_009"><span class="cls_009">and that the frozen approach was</span></div>
+<div style="position:absolute;left:36.00px;top:92.67px" class="cls_009"><span class="cls_009">who   started   the   surgery,   told</span></div>
+<div style="position:absolute;left:222.43px;top:92.67px" class="cls_009"><span class="cls_009">knowing. “We are now publishing</span></div>
+<div style="position:absolute;left:408.85px;top:92.67px" class="cls_009"><span class="cls_009">a  quicker  and  safer  procedure.</span></div>
+<div style="position:absolute;left:36.00px;top:104.67px" class="cls_009"><span class="cls_009">him what went wrong. “He said</span></div>
+<div style="position:absolute;left:222.43px;top:104.67px" class="cls_009"><span class="cls_009">the first human data in this field”,</span></div>
+<div style="position:absolute;left:408.85px;top:104.67px" class="cls_009"><span class="cls_009">They  set  up  a  company  which</span></div>
+<div style="position:absolute;left:36.00px;top:116.67px" class="cls_009"><span class="cls_009">that  my  pulmonary  artery  had</span></div>
+<div style="position:absolute;left:222.43px;top:116.67px" class="cls_009"><span class="cls_009">the doctors proudly declared in an</span></div>
+<div style="position:absolute;left:408.85px;top:116.67px" class="cls_009"><span class="cls_009">they called Cryocath. It was only a</span></div>
+<div style="position:absolute;left:36.00px;top:128.67px" class="cls_009"><span class="cls_009">ruptured   after   the   cryoballoon</span></div>
+<div style="position:absolute;left:222.43px;top:128.67px" class="cls_009"><span class="cls_009">initial publication.</span></div>
+<div style="position:absolute;left:408.85px;top:128.67px" class="cls_009"><span class="cls_009">small step in the thinking process</span></div>
+<div style="position:absolute;left:36.00px;top:140.67px" class="cls_009"><span class="cls_009">was inserted.“</span></div>
+<div style="position:absolute;left:234.43px;top:140.67px" class="cls_009"><span class="cls_009">The   in   total</span></div>
+<div style="position:absolute;left:312.29px;top:140.67px" class="cls_009"><span class="cls_009">141   patients</span></div>
+<div style="position:absolute;left:408.85px;top:140.67px" class="cls_009"><span class="cls_009">to move from a frozen catheter</span></div>
+<div style="position:absolute;left:48.00px;top:152.67px" class="cls_009"><span class="cls_009">A balloon? It’s the first time</span></div>
+<div style="position:absolute;left:222.43px;top:152.67px" class="cls_009"><span class="cls_009">appear to have participated in an</span></div>
+<div style="position:absolute;left:408.85px;top:152.67px" class="cls_009"><span class="cls_009">tip to a balloon at the end of the</span></div>
+<div style="position:absolute;left:36.00px;top:164.67px" class="cls_009"><span class="cls_009">Westerweel  has  heard  anything</span></div>
+<div style="position:absolute;left:222.43px;top:164.67px" class="cls_009"><span class="cls_009">important clinical trial. According</span></div>
+<div style="position:absolute;left:408.85px;top:164.67px" class="cls_009"><span class="cls_009">catheter, which would be blown</span></div>
+<div style="position:absolute;left:36.00px;top:176.67px" class="cls_009"><span class="cls_009">about  a  balloon.  The  comment</span></div>
+<div style="position:absolute;left:222.43px;top:176.67px" class="cls_009"><span class="cls_009">to experts, an accredited medical</span></div>
+<div style="position:absolute;left:408.85px;top:176.67px" class="cls_009"><span class="cls_009">up and frozen once placed in the</span></div>
+<div style="position:absolute;left:36.00px;top:188.67px" class="cls_009"><span class="cls_009">sticks in his mind in the months</span></div>
+<div style="position:absolute;left:222.43px;top:188.67px" class="cls_009"><span class="cls_009">research ethics committee should</span></div>
+<div style="position:absolute;left:408.85px;top:188.67px" class="cls_009"><span class="cls_009">left atrium. This would make the</span></div>
+<div style="position:absolute;left:36.00px;top:200.67px" class="cls_009"><span class="cls_009">spent  recovering  at  home.  He</span></div>
+<div style="position:absolute;left:222.43px;top:200.67px" class="cls_009"><span class="cls_009">have first approved the study. The</span></div>
+<div style="position:absolute;left:408.85px;top:200.67px" class="cls_009"><span class="cls_009">precise point-by-point procedure</span></div>
+<div style="position:absolute;left:36.00px;top:212.67px" class="cls_009"><span class="cls_009">searches the internet, makes some</span></div>
+<div style="position:absolute;left:222.43px;top:212.67px" class="cls_009"><span class="cls_009">patients  should  have  agreed  to</span></div>
+<div style="position:absolute;left:408.85px;top:212.67px" class="cls_009"><span class="cls_009">unnecessary.  By  using  a  frozen</span></div>
+<div style="position:absolute;left:36.00px;top:224.67px" class="cls_009"><span class="cls_009">calls. And then one day his partner</span></div>
+<div style="position:absolute;left:222.43px;top:224.67px" class="cls_009"><span class="cls_009">participation by means of the so-</span></div>
+<div style="position:absolute;left:408.85px;top:224.67px" class="cls_009"><span class="cls_009">balloon a lesion circle is formed</span></div>
+<div style="position:absolute;left:36.00px;top:236.67px" class="cls_009"><span class="cls_009">meets a friend in the supermarket</span></div>
+<div style="position:absolute;left:222.43px;top:236.67px" class="cls_009"><span class="cls_009">called informed consent.</span></div>
+<div style="position:absolute;left:408.85px;top:236.67px" class="cls_009"><span class="cls_009">instantaneously.</span></div>
+<div style="position:absolute;left:36.00px;top:248.67px" class="cls_009"><span class="cls_009">who she tells what happened to</span></div>
+<div style="position:absolute;left:234.43px;top:248.67px" class="cls_009"><span class="cls_009">The NRC investigation showed</span></div>
+<div style="position:absolute;left:420.85px;top:248.67px" class="cls_009"><span class="cls_009">The balloon was given the name</span></div>
+<div style="position:absolute;left:36.00px;top:260.67px" class="cls_009"><span class="cls_009">Hans.  That’s  strange,  says  the</span></div>
+<div style="position:absolute;left:222.43px;top:260.67px" class="cls_009"><span class="cls_009">that the patients were unaware</span></div>
+<div style="position:absolute;left:408.85px;top:260.67px" class="cls_009"><span class="cls_009">Arctic Front. It was tested on pigs</span></div>
+<div style="position:absolute;left:36.00px;top:272.67px" class="cls_009"><span class="cls_009">friend. A farmer in a nearby village</span></div>
+<div style="position:absolute;left:222.43px;top:272.67px" class="cls_009"><span class="cls_009">that they were being treated with</span></div>
+<div style="position:absolute;left:408.85px;top:272.67px" class="cls_009"><span class="cls_009">and   seemed   to   be   technically</span></div>
+<div style="position:absolute;left:36.00px;top:284.67px" class="cls_009"><span class="cls_009">had a similar experience with a</span></div>
+<div style="position:absolute;left:222.43px;top:284.67px" class="cls_009"><span class="cls_009">a new and therefore potentially</span></div>
+<div style="position:absolute;left:408.85px;top:284.67px" class="cls_009"><span class="cls_009">sound.   In   Prague   the   device</span></div>
+<div style="position:absolute;left:36.00px;top:296.67px" class="cls_009"><span class="cls_009">balloon.</span></div>
+<div style="position:absolute;left:222.43px;top:296.67px" class="cls_009"><span class="cls_009">more risky procedure and that they</span></div>
+<div style="position:absolute;left:408.85px;top:296.67px" class="cls_009"><span class="cls_009">was  used  on  20  patients.  This</span></div>
+<div style="position:absolute;left:222.43px;top:308.67px" class="cls_009"><span class="cls_009">were taking part in a clinical trial,</span></div>
+<div style="position:absolute;left:408.85px;top:308.67px" class="cls_009"><span class="cls_009">was sufficient to gain European</span></div>
+<div style="position:absolute;left:222.43px;top:320.67px" class="cls_009"><span class="cls_009">let alone sign for consent. Serious</span></div>
+<div style="position:absolute;left:408.85px;top:320.67px" class="cls_009"><span class="cls_009">authorization on the 14th of July</span></div>
+<div style="position:absolute;left:48.00px;top:325.67px" class="cls_016"><span class="cls_016">Europeans being used</span></div>
+<div style="position:absolute;left:222.43px;top:332.67px" class="cls_009"><span class="cls_009">and   sometimes   unforeseeable</span></div>
+<div style="position:absolute;left:408.85px;top:332.67px" class="cls_009"><span class="cls_009">2005. In Canada and the United</span></div>
+<div style="position:absolute;left:65.04px;top:337.67px" class="cls_016"><span class="cls_016">as guinea pigs</span></div>
+<div style="position:absolute;left:222.43px;top:344.67px" class="cls_009"><span class="cls_009">incidents were not reported to the</span></div>
+<div style="position:absolute;left:408.85px;top:344.67px" class="cls_009"><span class="cls_009">States it would take another five</span></div>
+<div style="position:absolute;left:222.43px;top:356.67px" class="cls_009"><span class="cls_009">Dutch   Healthcare   Inspectorate.</span></div>
+<div style="position:absolute;left:408.85px;top:356.67px" class="cls_009"><span class="cls_009">years before the balloon would be</span></div>
+<div style="position:absolute;left:222.43px;top:368.67px" class="cls_009"><span class="cls_009">The hospital is still of the opinion</span></div>
+<div style="position:absolute;left:408.85px;top:368.67px" class="cls_009"><span class="cls_009">allowed on the market.</span></div>
+<div style="position:absolute;left:48.00px;top:372.67px" class="cls_009"><span class="cls_009">Companies strive to come up</span></div>
+<div style="position:absolute;left:222.43px;top:380.67px" class="cls_009"><span class="cls_009">that the patients did not need to</span></div>
+<div style="position:absolute;left:420.85px;top:380.67px" class="cls_009"><span class="cls_009">If you wish to publish study</span></div>
+<div style="position:absolute;left:36.00px;top:384.67px" class="cls_009"><span class="cls_009">with   new   medical   devices   for</span></div>
+<div style="position:absolute;left:222.43px;top:392.67px" class="cls_009"><span class="cls_009">know that they were taking part in</span></div>
+<div style="position:absolute;left:408.85px;top:392.67px" class="cls_009"><span class="cls_009">results you must have a sufficiently</span></div>
+<div style="position:absolute;left:36.00px;top:396.67px" class="cls_009"><span class="cls_009">improving patients’ health - for</span></div>
+<div style="position:absolute;left:222.43px;top:404.67px" class="cls_009"><span class="cls_009">the study.</span></div>
+<div style="position:absolute;left:408.85px;top:404.67px" class="cls_009"><span class="cls_009">large study population. As soon as</span></div>
+<div style="position:absolute;left:36.00px;top:408.67px" class="cls_009"><span class="cls_009">example a new kind of pacemaker,</span></div>
+<div style="position:absolute;left:408.85px;top:416.67px" class="cls_009"><span class="cls_009">the balloon was authorized for use</span></div>
+<div style="position:absolute;left:36.00px;top:420.67px" class="cls_009"><span class="cls_009">lens, or in this case a cryoballoon.</span></div>
+<div style="position:absolute;left:408.85px;top:428.67px" class="cls_009"><span class="cls_009">the Erasmus MC threw its existing</span></div>
+<div style="position:absolute;left:36.00px;top:432.67px" class="cls_009"><span class="cls_009">These new medical devices are first</span></div>
+<div style="position:absolute;left:237.27px;top:433.67px" class="cls_016"><span class="cls_016">Frozen catheter tip</span></div>
+<div style="position:absolute;left:408.85px;top:440.67px" class="cls_009"><span class="cls_009">treatment    using    the    heated</span></div>
+<div style="position:absolute;left:36.00px;top:444.67px" class="cls_009"><span class="cls_009">introduced in Europe as here the</span></div>
+<div style="position:absolute;left:408.85px;top:452.67px" class="cls_009"><span class="cls_009">catheter method for patients with</span></div>
+<div style="position:absolute;left:36.00px;top:456.67px" class="cls_009"><span class="cls_009">only condition which has to be met</span></div>
+<div style="position:absolute;left:408.85px;top:464.67px" class="cls_009"><span class="cls_009">a certain type of heart condition</span></div>
+<div style="position:absolute;left:36.00px;top:468.67px" class="cls_009"><span class="cls_009">is demonstrating that the device</span></div>
+<div style="position:absolute;left:234.43px;top:468.67px" class="cls_009"><span class="cls_009">The   fact   that   the   patients</span></div>
+<div style="position:absolute;left:408.85px;top:476.67px" class="cls_009"><span class="cls_009">out of the window. However, at</span></div>
+<div style="position:absolute;left:36.00px;top:480.67px" class="cls_009"><span class="cls_009">works. On the other hand, in the</span></div>
+<div style="position:absolute;left:222.43px;top:480.67px" class="cls_009"><span class="cls_009">underwent   surgery   was   not</span></div>
+<div style="position:absolute;left:408.85px;top:488.67px" class="cls_009"><span class="cls_009">that moment the doctors had no</span></div>
+<div style="position:absolute;left:36.00px;top:492.67px" class="cls_009"><span class="cls_009">United States proof must also be</span></div>
+<div style="position:absolute;left:222.43px;top:492.67px" class="cls_009"><span class="cls_009">surprising. Their atriums</span></div>
+<div style="position:absolute;left:345.87px;top:492.67px" class="cls_009"><span class="cls_009">(heart</span></div>
+<div style="position:absolute;left:408.85px;top:500.67px" class="cls_009"><span class="cls_009">experience with the balloon. They</span></div>
+<div style="position:absolute;left:36.00px;top:504.67px" class="cls_009"><span class="cls_009">provided that the device is safe to</span></div>
+<div style="position:absolute;left:222.43px;top:504.67px" class="cls_009"><span class="cls_009">auricles) contracted rapidly and</span></div>
+<div style="position:absolute;left:408.85px;top:512.67px" class="cls_009"><span class="cls_009">didn’t know if the new procedure</span></div>
+<div style="position:absolute;left:36.00px;top:516.67px" class="cls_009"><span class="cls_009">be used in patients by performing</span></div>
+<div style="position:absolute;left:222.43px;top:516.67px" class="cls_009"><span class="cls_009">irregularly,   a   condition   called</span></div>
+<div style="position:absolute;left:408.85px;top:524.67px" class="cls_009"><span class="cls_009">was safe and effective for patients</span></div>
+<div style="position:absolute;left:36.00px;top:528.67px" class="cls_009"><span class="cls_009">clinical  trials  over  many  years.</span></div>
+<div style="position:absolute;left:222.43px;top:528.67px" class="cls_009"><span class="cls_009">atrium   fibrillation,   which   is</span></div>
+<div style="position:absolute;left:408.85px;top:536.67px" class="cls_009"><span class="cls_009">in the long term and whether it was</span></div>
+<div style="position:absolute;left:36.00px;top:540.67px" class="cls_009"><span class="cls_009">A   recent   article   on   this   was</span></div>
+<div style="position:absolute;left:222.43px;top:540.67px" class="cls_009"><span class="cls_009">associated with old age. One in</span></div>
+<div style="position:absolute;left:408.85px;top:548.67px" class="cls_009"><span class="cls_009">better  than  the heated  catheter</span></div>
+<div style="position:absolute;left:36.00px;top:552.67px" class="cls_009"><span class="cls_009">published in the medical journal</span></div>
+<div style="position:absolute;left:222.43px;top:552.67px" class="cls_009"><span class="cls_009">five people over the age of seventy</span></div>
+<div style="position:absolute;left:408.85px;top:560.67px" class="cls_009"><span class="cls_009">treatment. Nevertheless, from this</span></div>
+<div style="position:absolute;left:36.00px;top:564.67px" class="cls_013"><span class="cls_013">The BMJ</span><span class="cls_009">. Of the 309 implantable</span></div>
+<div style="position:absolute;left:222.43px;top:564.67px" class="cls_009"><span class="cls_009">suffers    from    it.    Medication</span></div>
+<div style="position:absolute;left:408.85px;top:572.67px" class="cls_009"><span class="cls_009">point on patients are only treated</span></div>
+<div style="position:absolute;left:36.00px;top:576.67px" class="cls_009"><span class="cls_009">medical devices which were placed</span></div>
+<div style="position:absolute;left:222.43px;top:576.67px" class="cls_009"><span class="cls_009">temporarily</span></div>
+<div style="position:absolute;left:292.54px;top:576.67px" class="cls_009"><span class="cls_009">suppresses</span></div>
+<div style="position:absolute;left:358.74px;top:576.67px" class="cls_009"><span class="cls_009">the</span></div>
+<div style="position:absolute;left:408.85px;top:584.67px" class="cls_009"><span class="cls_009">with  the  new  balloon  method.</span></div>
+<div style="position:absolute;left:36.00px;top:588.67px" class="cls_009"><span class="cls_009">on the market between 2005 and</span></div>
+<div style="position:absolute;left:222.43px;top:588.67px" class="cls_009"><span class="cls_009">symptoms   but   the   condition</span></div>
+<div style="position:absolute;left:408.85px;top:596.67px" class="cls_009"><span class="cls_009">Cardiologist Van Belle said this</span></div>
+<div style="position:absolute;left:36.00px;top:600.67px" class="cls_009"><span class="cls_009">2010, something went wrong in</span></div>
+<div style="position:absolute;left:222.43px;top:600.67px" class="cls_009"><span class="cls_009">worsens as time goes by. In that</span></div>
+<div style="position:absolute;left:408.85px;top:608.67px" class="cls_009"><span class="cls_009">was in order to be able to include</span></div>
+<div style="position:absolute;left:36.00px;top:612.67px" class="cls_009"><span class="cls_009">27 percent of those used in Europe</span></div>
+<div style="position:absolute;left:222.43px;top:612.67px" class="cls_009"><span class="cls_009">case  it  can  help  to  isolate  the</span></div>
+<div style="position:absolute;left:408.85px;top:620.67px" class="cls_009"><span class="cls_009">enough  patients  in  the  study:</span></div>
+<div style="position:absolute;left:36.00px;top:624.67px" class="cls_009"><span class="cls_009">and only 14 percent in the United</span></div>
+<div style="position:absolute;left:222.43px;top:624.67px" class="cls_009"><span class="cls_009">pulmonary  arteries  in  patients</span></div>
+<div style="position:absolute;left:408.85px;top:632.67px" class="cls_009"><span class="cls_009">“That was one of the reasons. If</span></div>
+<div style="position:absolute;left:36.00px;top:636.67px" class="cls_009"><span class="cls_009">States.</span></div>
+<div style="position:absolute;left:222.43px;top:636.67px" class="cls_009"><span class="cls_009">who are able to cope with this</span></div>
+<div style="position:absolute;left:408.85px;top:644.67px" class="cls_009"><span class="cls_009">you want to publish study results</span></div>
+<div style="position:absolute;left:48.00px;top:648.67px" class="cls_009"><span class="cls_009">Europeans    appear    to    be</span></div>
+<div style="position:absolute;left:222.43px;top:648.67px" class="cls_009"><span class="cls_009">physically. A catheter is entered</span></div>
+<div style="position:absolute;left:408.85px;top:656.67px" class="cls_009"><span class="cls_009">then you need a sufficiently large</span></div>
+<div style="position:absolute;left:36.00px;top:660.67px" class="cls_009"><span class="cls_009">being used as guinea pigs for the</span></div>
+<div style="position:absolute;left:222.43px;top:660.67px" class="cls_009"><span class="cls_009">via the groin artery into the heart,</span></div>
+<div style="position:absolute;left:408.85px;top:668.67px" class="cls_009"><span class="cls_009">population.”    The    researchers</span></div>
+<div style="position:absolute;left:36.00px;top:672.67px" class="cls_009"><span class="cls_009">American  market  despite  being</span></div>
+<div style="position:absolute;left:222.43px;top:672.67px" class="cls_009"><span class="cls_009">where it pierces through the right</span></div>
+<div style="position:absolute;left:408.85px;top:680.67px" class="cls_009"><span class="cls_009">aimed for 150 patients. In the end</span></div>
+<div style="position:absolute;left:36.00px;top:684.67px" class="cls_009"><span class="cls_009">unaware  of  this.  For  example,</span></div>
+<div style="position:absolute;left:222.43px;top:684.67px" class="cls_009"><span class="cls_009">atrium into the left one. Tip by</span></div>
+<div style="position:absolute;left:408.85px;top:692.67px" class="cls_009"><span class="cls_009">they had 141.</span></div>
+<div style="position:absolute;left:36.00px;top:696.67px" class="cls_009"><span class="cls_009">doctors are not required to inform</span></div>
+<div style="position:absolute;left:222.43px;top:696.67px" class="cls_009"><span class="cls_009">tip, the catheter burns around the</span></div>
+<div style="position:absolute;left:420.85px;top:704.67px" class="cls_009"><span class="cls_009">Studies   such   as   those   in</span></div>
+<div style="position:absolute;left:36.00px;top:708.67px" class="cls_009"><span class="cls_009">a patient that they are the first in</span></div>
+<div style="position:absolute;left:222.43px;top:708.67px" class="cls_009"><span class="cls_009">pulmonary  arteries  until  circles</span></div>
+<div style="position:absolute;left:408.85px;top:716.67px" class="cls_009"><span class="cls_009">Rotterdam   are   necessary   for</span></div>
+<div style="position:absolute;left:36.00px;top:720.67px" class="cls_009"><span class="cls_009">which a new sort of hip implant</span></div>
+<div style="position:absolute;left:222.43px;top:720.67px" class="cls_009"><span class="cls_009">of   lesions   are   formed.   These</span></div>
+<div style="position:absolute;left:408.85px;top:728.67px" class="cls_009"><span class="cls_009">turning new medical devices into</span></div>
+<div style="position:absolute;left:36.00px;top:732.67px" class="cls_009"><span class="cls_009">is placed. Only if the procedure</span></div>
+<div style="position:absolute;left:222.43px;top:732.67px" class="cls_009"><span class="cls_009">scars should stop the undesired</span></div>
+<div style="position:absolute;left:408.85px;top:740.67px" class="cls_009"><span class="cls_009">successful products, explains Jan</span></div>
+<div style="position:absolute;left:36.00px;top:744.67px" class="cls_009"><span class="cls_009">is part of a clinical trial must they</span></div>
+<div style="position:absolute;left:222.43px;top:744.67px" class="cls_009"><span class="cls_009">impulses to the heart. This is how</span></div>
+<div style="position:absolute;left:408.85px;top:752.67px" class="cls_009"><span class="cls_009">Keltjens. He was the CEO of the</span></div>
+<div style="position:absolute;left:36.00px;top:756.67px" class="cls_009"><span class="cls_009">inform the patient. And even then</span></div>
+<div style="position:absolute;left:222.43px;top:756.67px" class="cls_009"><span class="cls_009">it has been carried out since the</span></div>
+<div style="position:absolute;left:408.85px;top:764.67px" class="cls_009"><span class="cls_009">stock  exchange  listed  company</span></div>
+<div style="position:absolute;left:36.00px;top:768.67px" class="cls_009"><span class="cls_009">this isn’t always the case.</span></div>
+<div style="position:absolute;left:222.43px;top:768.67px" class="cls_009"><span class="cls_009">nineties.</span></div>
+<div style="position:absolute;left:408.85px;top:776.67px" class="cls_009"><span class="cls_009">Cryocath.</span></div>
+<div style="position:absolute;left:459.71px;top:776.67px" class="cls_009"><span class="cls_009">“Studies   carried   out</span></div>
+<div style="position:absolute;left:48.00px;top:780.67px" class="cls_009"><span class="cls_009">Between   August</span></div>
+<div style="position:absolute;left:136.67px;top:780.67px" class="cls_009"><span class="cls_009">2005   and</span></div>
+<div style="position:absolute;left:234.43px;top:780.67px" class="cls_009"><span class="cls_009">Canadian engineers discovered</span></div>
+<div style="position:absolute;left:408.85px;top:788.67px" class="cls_009"><span class="cls_009">with the aim of gaining market</span></div>
+<div style="position:absolute;left:36.00px;top:792.67px" class="cls_009"><span class="cls_009">August</span></div>
+<div style="position:absolute;left:77.22px;top:792.67px" class="cls_009"><span class="cls_009">2007   doctors   in   the</span></div>
+<div style="position:absolute;left:222.43px;top:792.67px" class="cls_009"><span class="cls_009">at the beginning of this century</span></div>
+<div style="position:absolute;left:565.28px;top:812.56px" class="cls_006"><span class="cls_006">4</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:3404px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="818e5324-59b7-11e8-b174-0cc47a792c0a_id_818e5324-59b7-11e8-b174-0cc47a792c0a_files/background5.jpg" width=595 height=841></div>
+<div style="position:absolute;left:507.88px;top:12.61px" class="cls_003"><span class="cls_003">NRC</span><span class="cls_004">Weekend</span></div>
+<div style="position:absolute;left:35.28px;top:11.70px" class="cls_002"><span class="cls_002">Weekend</span></div>
+<div style="position:absolute;left:381.23px;top:22.62px" class="cls_005"><span class="cls_005">SATURDAY 24 SEPTEMBER & SUNDAY 25 SEPTEMBER 2016</span></div>
+<div style="position:absolute;left:36.00px;top:55.46px" class="cls_009"><span class="cls_009">authorization are limited anyway.</span></div>
+<div style="position:absolute;left:226.22px;top:55.46px" class="cls_009"><span class="cls_009">was told that it was unnecessary to</span></div>
+<div style="position:absolute;left:36.00px;top:67.46px" class="cls_009"><span class="cls_009">You   want   to   show   that   the</span></div>
+<div style="position:absolute;left:226.22px;top:67.46px" class="cls_009"><span class="cls_009">apply for approval and so he didn’t.</span></div>
+<div style="position:absolute;left:405.37px;top:65.70px" class="cls_017"><span class="cls_017">After about twenty</span></div>
+<div style="position:absolute;left:36.00px;top:79.46px" class="cls_009"><span class="cls_009">results are sound in longer-term</span></div>
+<div style="position:absolute;left:226.22px;top:79.46px" class="cls_009"><span class="cls_009">And that’s why the patients didn’t</span></div>
+<div style="position:absolute;left:405.37px;top:79.70px" class="cls_017"><span class="cls_017">procedures you start to</span></div>
+<div style="position:absolute;left:36.00px;top:91.46px" class="cls_009"><span class="cls_009">studies.”   The   Rotterdam   study</span></div>
+<div style="position:absolute;left:226.22px;top:91.46px" class="cls_009"><span class="cls_009">sign an informed consent. But why</span></div>
+<div style="position:absolute;left:405.37px;top:93.70px" class="cls_017"><span class="cls_017">notice that they go more</span></div>
+<div style="position:absolute;left:36.00px;top:103.46px" class="cls_009"><span class="cls_009">was important, he says. It was one</span></div>
+<div style="position:absolute;left:226.22px;top:103.46px" class="cls_009"><span class="cls_009">did Van Belle write in his thesis</span></div>
+<div style="position:absolute;left:405.37px;top:107.70px" class="cls_017"><span class="cls_017">smoothly.</span></div>
+<div style="position:absolute;left:36.00px;top:115.46px" class="cls_009"><span class="cls_009">of the first large-scale studies into</span></div>
+<div style="position:absolute;left:226.22px;top:115.46px" class="cls_009"><span class="cls_009">that all the patients </span><span class="cls_013">did</span><span class="cls_009"> sign it? “I</span></div>
+<div style="position:absolute;left:405.48px;top:127.70px" class="cls_005"><span class="cls_005">CARDIOLOGIST YVES VAN BELLE</span></div>
+<div style="position:absolute;left:36.00px;top:127.46px" class="cls_009"><span class="cls_009">the  balloon.</span></div>
+<div style="position:absolute;left:100.34px;top:127.46px" class="cls_009"><span class="cls_009">“Erasmus  MC  was</span></div>
+<div style="position:absolute;left:226.22px;top:127.46px" class="cls_009"><span class="cls_009">thought  the  patients  had  signed</span></div>
+<div style="position:absolute;left:36.00px;top:139.46px" class="cls_009"><span class="cls_009">a large center and was therefore</span></div>
+<div style="position:absolute;left:226.22px;top:139.46px" class="cls_009"><span class="cls_009">it”, Van Belle now says. He didn’t</span></div>
+<div style="position:absolute;left:36.00px;top:151.46px" class="cls_009"><span class="cls_009">able to rather quickly enter a lot of</span></div>
+<div style="position:absolute;left:226.22px;top:151.46px" class="cls_009"><span class="cls_009">check.  Jordaens  arranged  it,  he</span></div>
+<div style="position:absolute;left:36.00px;top:163.46px" class="cls_009"><span class="cls_009">patients into a database.”</span></div>
+<div style="position:absolute;left:226.22px;top:163.46px" class="cls_009"><span class="cls_009">thought. Though Jordaens in turn</span></div>
+<div style="position:absolute;left:48.00px;top:175.46px" class="cls_009"><span class="cls_009">The study has begun.</span></div>
+<div style="position:absolute;left:226.22px;top:175.46px" class="cls_009"><span class="cls_009">thought that the PhD student had</span></div>
+<div style="position:absolute;left:226.22px;top:187.46px" class="cls_009"><span class="cls_009">arranged informed consent.</span></div>
+<div style="position:absolute;left:238.22px;top:199.46px" class="cls_009"><span class="cls_009">On a Saturday morning Jordaens</span></div>
+<div style="position:absolute;left:226.22px;top:211.46px" class="cls_009"><span class="cls_009">is sitting with a laptop next to him</span></div>
+<div style="position:absolute;left:50.23px;top:216.46px" class="cls_016"><span class="cls_016">Start with the opinion</span></div>
+<div style="position:absolute;left:226.22px;top:223.46px" class="cls_009"><span class="cls_009">and a briefcase full of documents</span></div>
+<div style="position:absolute;left:86.49px;top:228.46px" class="cls_016"><span class="cls_016">leaders</span></div>
+<div style="position:absolute;left:226.22px;top:235.46px" class="cls_009"><span class="cls_009">in the lobby of the Sheraton Hotel</span></div>
+<div style="position:absolute;left:226.22px;top:247.46px" class="cls_009"><span class="cls_009">in Brussels, across from the private</span></div>
+<div style="position:absolute;left:226.22px;top:259.46px" class="cls_009"><span class="cls_009">clinic  where  he  now  works.  He</span></div>
+<div style="position:absolute;left:48.00px;top:263.46px" class="cls_009"><span class="cls_009">Luc  Jordaens  is  an  excellent</span></div>
+<div style="position:absolute;left:226.22px;top:271.46px" class="cls_009"><span class="cls_009">says he can’t remember everything</span></div>
+<div style="position:absolute;left:36.00px;top:275.46px" class="cls_009"><span class="cls_009">research leader. He is a respected</span></div>
+<div style="position:absolute;left:226.22px;top:283.46px" class="cls_009"><span class="cls_009">that happened. It was all so long</span></div>
+<div style="position:absolute;left:36.00px;top:287.46px" class="cls_009"><span class="cls_009">professor who is enthusiastic to try</span></div>
+<div style="position:absolute;left:226.22px;top:295.46px" class="cls_009"><span class="cls_009">ago.   When   asked   whether   he</span></div>
+<div style="position:absolute;left:36.00px;top:299.46px" class="cls_009"><span class="cls_009">new techniques and is known for</span></div>
+<div style="position:absolute;left:226.22px;top:307.46px" class="cls_009"><span class="cls_009">remembers   at   least </span><span class="cls_013">  telling</span><span class="cls_009">   his</span></div>
+<div style="position:absolute;left:405.37px;top:309.98px" class="cls_009"><span class="cls_009">table. His wife is seated next to him.</span></div>
+<div style="position:absolute;left:36.00px;top:311.46px" class="cls_009"><span class="cls_009">his ‘good hands’, as the saying goes.</span></div>
+<div style="position:absolute;left:226.22px;top:319.46px" class="cls_009"><span class="cls_009">patients that they were taking part</span></div>
+<div style="position:absolute;left:417.37px;top:321.98px" class="cls_009"><span class="cls_009">He was supposed to have the</span></div>
+<div style="position:absolute;left:36.00px;top:323.46px" class="cls_009"><span class="cls_009">He is someone who can make a</span></div>
+<div style="position:absolute;left:226.22px;top:331.46px" class="cls_009"><span class="cls_009">in a clinical trial into the safety</span></div>
+<div style="position:absolute;left:405.37px;top:333.98px" class="cls_009"><span class="cls_009">heated   catheter   treatment   and</span></div>
+<div style="position:absolute;left:36.00px;top:335.46px" class="cls_009"><span class="cls_009">new product a success and who can</span></div>
+<div style="position:absolute;left:226.22px;top:343.46px" class="cls_009"><span class="cls_009">and effectiveness of a new medical</span></div>
+<div style="position:absolute;left:405.37px;top:345.98px" class="cls_009"><span class="cls_009">was placed on the waiting list for</span></div>
+<div style="position:absolute;left:36.00px;top:347.46px" class="cls_009"><span class="cls_009">present that success with authority</span></div>
+<div style="position:absolute;left:226.22px;top:355.46px" class="cls_009"><span class="cls_009">device, he leans forward: “If I had a</span></div>
+<div style="position:absolute;left:405.37px;top:357.98px" class="cls_009"><span class="cls_009">six  months.  However,  Jordaens</span></div>
+<div style="position:absolute;left:36.00px;top:359.46px" class="cls_009"><span class="cls_009">to his peers, in congresses and in</span></div>
+<div style="position:absolute;left:226.22px;top:367.46px" class="cls_009"><span class="cls_009">shrewd patient in front of me then</span></div>
+<div style="position:absolute;left:405.37px;top:369.98px" class="cls_009"><span class="cls_009">called him earlier at home.</span></div>
+<div style="position:absolute;left:543.19px;top:369.98px" class="cls_009"><span class="cls_009">“He</span></div>
+<div style="position:absolute;left:36.00px;top:371.46px" class="cls_009"><span class="cls_009">journals. Keltjens:</span></div>
+<div style="position:absolute;left:125.41px;top:371.46px" class="cls_009"><span class="cls_009">“My idea was</span></div>
+<div style="position:absolute;left:226.22px;top:379.46px" class="cls_009"><span class="cls_009">I would definitely have told him”,</span></div>
+<div style="position:absolute;left:405.37px;top:381.98px" class="cls_009"><span class="cls_009">said: I have something new. The</span></div>
+<div style="position:absolute;left:36.00px;top:383.46px" class="cls_009"><span class="cls_009">always:   start   with   the   opinion</span></div>
+<div style="position:absolute;left:226.22px;top:391.46px" class="cls_009"><span class="cls_009">he says. “But if I had a patient</span></div>
+<div style="position:absolute;left:405.37px;top:393.98px" class="cls_009"><span class="cls_009">result is better and it is much safer.</span></div>
+<div style="position:absolute;left:36.00px;top:395.46px" class="cls_009"><span class="cls_009">leaders.   Convince   them   of   the</span></div>
+<div style="position:absolute;left:226.22px;top:403.46px" class="cls_009"><span class="cls_009">who just said ‘You’re the doctor.</span></div>
+<div style="position:absolute;left:405.37px;top:405.98px" class="cls_009"><span class="cls_009">Complications  can  occur  during</span></div>
+<div style="position:absolute;left:36.00px;top:407.46px" class="cls_009"><span class="cls_009">potential  of  the  medical  device.</span></div>
+<div style="position:absolute;left:226.22px;top:415.46px" class="cls_009"><span class="cls_009">Do what you have to do’, then you</span></div>
+<div style="position:absolute;left:405.37px;top:417.98px" class="cls_009"><span class="cls_009">the burning method. That doesn’t</span></div>
+<div style="position:absolute;left:36.00px;top:419.46px" class="cls_009"><span class="cls_009">They are the best sellers, the best</span></div>
+<div style="position:absolute;left:226.22px;top:427.46px" class="cls_009"><span class="cls_009">don’t have to tell them everything.”</span></div>
+<div style="position:absolute;left:405.37px;top:429.98px" class="cls_009"><span class="cls_009">happen  at  all  with  the  freezing</span></div>
+<div style="position:absolute;left:36.00px;top:431.46px" class="cls_009"><span class="cls_009">advocates  for  your  technology.”</span></div>
+<div style="position:absolute;left:226.22px;top:439.46px" class="cls_009"><span class="cls_009">Though how many patients asked</span></div>
+<div style="position:absolute;left:405.37px;top:441.98px" class="cls_009"><span class="cls_009">method. He said: you are the ideal</span></div>
+<div style="position:absolute;left:36.00px;top:443.46px" class="cls_009"><span class="cls_009">For the first important studies with</span></div>
+<div style="position:absolute;left:226.22px;top:451.46px" class="cls_009"><span class="cls_009">coincidentally on their own accord</span></div>
+<div style="position:absolute;left:405.37px;top:453.98px" class="cls_009"><span class="cls_009">patient, you are still young.“ The</span></div>
+<div style="position:absolute;left:36.00px;top:455.46px" class="cls_009"><span class="cls_009">the balloon the company “doesn’t</span></div>
+<div style="position:absolute;left:226.22px;top:463.46px" class="cls_009"><span class="cls_009">whether they were taking part in a</span></div>
+<div style="position:absolute;left:405.37px;top:465.98px" class="cls_009"><span class="cls_009">surgery was called off twice. The</span></div>
+<div style="position:absolute;left:36.00px;top:467.46px" class="cls_009"><span class="cls_009">want  doctors  who  are  only  out</span></div>
+<div style="position:absolute;left:226.22px;top:475.46px" class="cls_009"><span class="cls_009">clinical trial? “Very few”, he admits.</span></div>
+<div style="position:absolute;left:405.37px;top:477.98px" class="cls_009"><span class="cls_009">machine wasn’t working. Then he</span></div>
+<div style="position:absolute;left:36.00px;top:479.46px" class="cls_009"><span class="cls_009">to  prove  that  something  doesn’t</span></div>
+<div style="position:absolute;left:226.22px;top:487.46px" class="cls_009"><span class="cls_009">“Very few.”</span></div>
+<div style="position:absolute;left:405.37px;top:489.98px" class="cls_009"><span class="cls_009">was  scheduled  for  the  morning</span></div>
+<div style="position:absolute;left:36.00px;top:491.46px" class="cls_009"><span class="cls_009">work.” Jordaens is on the scientific</span></div>
+<div style="position:absolute;left:36.00px;top:503.46px" class="cls_009"><span class="cls_009">advisory  board  of  Cryocath  and</span></div>
+<div style="position:absolute;left:405.37px;top:501.98px" class="cls_009"><span class="cls_009">after Easter Monday 2006.</span></div>
+<div style="position:absolute;left:36.00px;top:515.46px" class="cls_009"><span class="cls_009">attends meetings.</span></div>
+<div style="position:absolute;left:417.37px;top:513.98px" class="cls_009"><span class="cls_009">He presses his thumb and finger</span></div>
+<div style="position:absolute;left:48.00px;top:527.46px" class="cls_009"><span class="cls_009">A race ensues to see who can</span></div>
+<div style="position:absolute;left:405.37px;top:525.98px" class="cls_009"><span class="cls_009">together and then opens them to</span></div>
+<div style="position:absolute;left:238.74px;top:528.46px" class="cls_016"><span class="cls_016">Bang. Another balloon</span></div>
+<div style="position:absolute;left:36.00px;top:539.46px" class="cls_009"><span class="cls_009">publish    first.    Three    German</span></div>
+<div style="position:absolute;left:405.37px;top:537.98px" class="cls_009"><span class="cls_009">show how he felt the balloon pop</span></div>
+<div style="position:absolute;left:283.59px;top:540.46px" class="cls_016"><span class="cls_016">pops</span></div>
+<div style="position:absolute;left:36.00px;top:551.46px" class="cls_009"><span class="cls_009">centers are carrying out the same</span></div>
+<div style="position:absolute;left:405.37px;top:549.98px" class="cls_009"><span class="cls_009">next to his heart. Again and again.</span></div>
+<div style="position:absolute;left:36.00px;top:563.46px" class="cls_009"><span class="cls_009">study. Jordaens hires the young</span></div>
+<div style="position:absolute;left:405.37px;top:561.98px" class="cls_009"><span class="cls_009">Bang.  He  was  on  the  operating</span></div>
+<div style="position:absolute;left:36.00px;top:575.46px" class="cls_009"><span class="cls_009">cardiologist  Van  Belle  who  has</span></div>
+<div style="position:absolute;left:238.22px;top:575.46px" class="cls_009"><span class="cls_009">Piet  van  der  Slikke</span></div>
+<div style="position:absolute;left:339.03px;top:575.46px" class="cls_009"><span class="cls_009">(67)  was</span></div>
+<div style="position:absolute;left:405.37px;top:573.98px" class="cls_009"><span class="cls_009">table  from  seven  thirty,  totally</span></div>
+<div style="position:absolute;left:36.00px;top:587.46px" class="cls_009"><span class="cls_009">never   used   the   balloon   before</span></div>
+<div style="position:absolute;left:226.22px;top:587.46px" class="cls_009"><span class="cls_009">still young when he took over his</span></div>
+<div style="position:absolute;left:405.37px;top:585.98px" class="cls_009"><span class="cls_009">conscious. The professor, another</span></div>
+<div style="position:absolute;left:36.00px;top:599.46px" class="cls_009"><span class="cls_009">and who plans to use it for his</span></div>
+<div style="position:absolute;left:226.22px;top:599.46px" class="cls_009"><span class="cls_009">parents’ arable farming company</span></div>
+<div style="position:absolute;left:405.37px;top:597.98px" class="cls_009"><span class="cls_009">doctor and a Cryocath technician</span></div>
+<div style="position:absolute;left:36.00px;top:611.46px" class="cls_009"><span class="cls_009">PhD  thesis.  He  hopes  that  the</span></div>
+<div style="position:absolute;left:226.22px;top:611.46px" class="cls_009"><span class="cls_009">in Poortvliet in the in the south-</span></div>
+<div style="position:absolute;left:405.37px;top:609.98px" class="cls_009"><span class="cls_009">were at his side. First the catheter</span></div>
+<div style="position:absolute;left:36.00px;top:623.46px" class="cls_009"><span class="cls_009">study will form the basis for his</span></div>
+<div style="position:absolute;left:226.22px;top:623.46px" class="cls_009"><span class="cls_009">west  of  the  Netherlands.  Eighty</span></div>
+<div style="position:absolute;left:405.37px;top:621.98px" class="cls_009"><span class="cls_009">went through his heart and then</span></div>
+<div style="position:absolute;left:36.00px;top:635.46px" class="cls_009"><span class="cls_009">scientific career. Van Belle: “You</span></div>
+<div style="position:absolute;left:226.22px;top:635.46px" class="cls_009"><span class="cls_009">hectares  of  fields  with  celeriac,</span></div>
+<div style="position:absolute;left:405.37px;top:633.98px" class="cls_009"><span class="cls_009">accidentally  into  his  wind  pipe.</span></div>
+<div style="position:absolute;left:36.00px;top:647.46px" class="cls_009"><span class="cls_009">want  to  write  an  article  which</span></div>
+<div style="position:absolute;left:226.22px;top:647.46px" class="cls_009"><span class="cls_009">onions, carrots, sugar beets and</span></div>
+<div style="position:absolute;left:405.37px;top:645.98px" class="cls_009"><span class="cls_009">“Jordaens has to come back”, he</span></div>
+<div style="position:absolute;left:36.00px;top:659.46px" class="cls_009"><span class="cls_009">will be popular for references in</span></div>
+<div style="position:absolute;left:226.22px;top:659.46px" class="cls_009"><span class="cls_009">brussels sprouts. He sold the crops</span></div>
+<div style="position:absolute;left:405.37px;top:657.98px" class="cls_009"><span class="cls_009">heard. Panic ensues. “Cursing and</span></div>
+<div style="position:absolute;left:36.00px;top:671.46px" class="cls_009"><span class="cls_009">the future. So if you’re the first to</span></div>
+<div style="position:absolute;left:226.22px;top:671.46px" class="cls_009"><span class="cls_009">at auction. He was almost never ill.</span></div>
+<div style="position:absolute;left:405.37px;top:669.98px" class="cls_009"><span class="cls_009">swearing.” Around 12 o’clock the</span></div>
+<div style="position:absolute;left:36.00px;top:683.46px" class="cls_009"><span class="cls_009">publish, then articles that appear</span></div>
+<div style="position:absolute;left:226.22px;top:683.46px" class="cls_009"><span class="cls_009">Once he had suffered from a groin</span></div>
+<div style="position:absolute;left:405.37px;top:681.98px" class="cls_009"><span class="cls_009">professor assured him everything</span></div>
+<div style="position:absolute;left:36.00px;top:695.46px" class="cls_009"><span class="cls_009">later will refer to your paper.”</span></div>
+<div style="position:absolute;left:226.22px;top:695.46px" class="cls_009"><span class="cls_009">rupture and once he was operated</span></div>
+<div style="position:absolute;left:405.37px;top:693.98px" class="cls_009"><span class="cls_009">was   okay.</span></div>
+<div style="position:absolute;left:462.97px;top:693.98px" class="cls_009"><span class="cls_009">“He   said:   we   have</span></div>
+<div style="position:absolute;left:48.00px;top:707.46px" class="cls_009"><span class="cls_009">The study is not submitted to</span></div>
+<div style="position:absolute;left:226.22px;top:707.46px" class="cls_009"><span class="cls_009">on a lifter’s elbow. This was caused</span></div>
+<div style="position:absolute;left:405.37px;top:705.98px" class="cls_009"><span class="cls_009">everything   back   under   control.</span></div>
+<div style="position:absolute;left:36.00px;top:719.46px" class="cls_009"><span class="cls_009">the hospital’s accredited medical</span></div>
+<div style="position:absolute;left:226.22px;top:719.46px" class="cls_009"><span class="cls_009">by the repetitive movement when</span></div>
+<div style="position:absolute;left:405.37px;top:717.98px" class="cls_009"><span class="cls_009">What do you think? I said: I’m here</span></div>
+<div style="position:absolute;left:36.00px;top:731.46px" class="cls_009"><span class="cls_009">research</span></div>
+<div style="position:absolute;left:94.08px;top:731.46px" class="cls_009"><span class="cls_009">ethics</span></div>
+<div style="position:absolute;left:140.47px;top:731.46px" class="cls_009"><span class="cls_009">committee.</span></div>
+<div style="position:absolute;left:226.22px;top:731.46px" class="cls_009"><span class="cls_009">harvesting    sprouts,    eventually</span></div>
+<div style="position:absolute;left:405.37px;top:729.98px" class="cls_009"><span class="cls_009">anyway. You are the professor.” He</span></div>
+<div style="position:absolute;left:36.00px;top:743.46px" class="cls_009"><span class="cls_009">Jordaens   goes   about   it   in   a</span></div>
+<div style="position:absolute;left:226.22px;top:743.46px" class="cls_009"><span class="cls_009">causing wear on his tendons. And</span></div>
+<div style="position:absolute;left:405.37px;top:741.98px" class="cls_009"><span class="cls_009">still felt fine then.</span></div>
+<div style="position:absolute;left:36.00px;top:755.46px" class="cls_009"><span class="cls_009">different way. He says he spoke to</span></div>
+<div style="position:absolute;left:226.22px;top:755.46px" class="cls_009"><span class="cls_009">then his heart started playing up.</span></div>
+<div style="position:absolute;left:417.37px;top:753.98px" class="cls_009"><span class="cls_009">Each   new   balloon   brought</span></div>
+<div style="position:absolute;left:36.00px;top:767.46px" class="cls_009"><span class="cls_009">the esophageal surgeon, who is also</span></div>
+<div style="position:absolute;left:226.22px;top:767.46px" class="cls_009"><span class="cls_009">He was also referred to Jordaens in</span></div>
+<div style="position:absolute;left:405.37px;top:765.98px" class="cls_009"><span class="cls_009">with it a fresh round of pain. The</span></div>
+<div style="position:absolute;left:36.00px;top:779.46px" class="cls_009"><span class="cls_009">chair of the committee, for half an</span></div>
+<div style="position:absolute;left:226.22px;top:779.46px" class="cls_009"><span class="cls_009">Rotterdam in the summer of 2005,</span></div>
+<div style="position:absolute;left:405.37px;top:777.98px" class="cls_009"><span class="cls_009">catheter  went  from  his  groin  to</span></div>
+<div style="position:absolute;left:36.00px;top:791.46px" class="cls_009"><span class="cls_009">hour in his office. He says that he</span></div>
+<div style="position:absolute;left:226.22px;top:791.46px" class="cls_009"><span class="cls_009">he says whilst we talk at his kitchen</span></div>
+<div style="position:absolute;left:405.37px;top:789.98px" class="cls_009"><span class="cls_009">his heart and then bang, another</span></div>
+<div style="position:absolute;left:565.28px;top:812.56px" class="cls_006"><span class="cls_006">5</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:4255px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="818e5324-59b7-11e8-b174-0cc47a792c0a_id_818e5324-59b7-11e8-b174-0cc47a792c0a_files/background6.jpg" width=595 height=841></div>
+<div style="position:absolute;left:507.88px;top:12.61px" class="cls_003"><span class="cls_003">NRC</span><span class="cls_004">Weekend</span></div>
+<div style="position:absolute;left:35.28px;top:11.70px" class="cls_002"><span class="cls_002">Weekend</span></div>
+<div style="position:absolute;left:381.23px;top:22.62px" class="cls_005"><span class="cls_005">SATURDAY 24 SEPTEMBER & SUNDAY 25 SEPTEMBER 2016</span></div>
+<div style="position:absolute;left:36.43px;top:58.51px" class="cls_008"><span class="cls_008">TREATING ATRIAL FIBRILLATION</span></div>
+<div style="position:absolute;left:215.84px;top:57.17px" class="cls_009"><span class="cls_009">balloon popped. A basin of water</span></div>
+<div style="position:absolute;left:406.06px;top:57.17px" class="cls_009"><span class="cls_009">internationally  renowned  French</span></div>
+<div style="position:absolute;left:215.84px;top:69.17px" class="cls_009"><span class="cls_009">was   brought   to   pre-heat   the</span></div>
+<div style="position:absolute;left:406.06px;top:69.17px" class="cls_009"><span class="cls_009">cardiologist Pierre Jaïs labels these</span></div>
+<div style="position:absolute;left:36.28px;top:80.51px" class="cls_018"><span class="cls_018">Electric impulses from the pulmonary arteries</span></div>
+<div style="position:absolute;left:215.84px;top:81.17px" class="cls_009"><span class="cls_009">balloon.   And   again,   bang.   The</span></div>
+<div style="position:absolute;left:406.06px;top:81.17px" class="cls_009"><span class="cls_009">complications    as</span></div>
+<div style="position:absolute;left:506.13px;top:81.17px" class="cls_009"><span class="cls_009">“significant”</span></div>
+<div style="position:absolute;left:36.28px;top:89.51px" class="cls_018"><span class="cls_018">disturb the normal contraction of atrial</span></div>
+<div style="position:absolute;left:215.84px;top:93.17px" class="cls_009"><span class="cls_009">doctors “were cursing like sailors”.</span></div>
+<div style="position:absolute;left:406.06px;top:93.17px" class="cls_009"><span class="cls_009">with “serious complications in 8.6</span></div>
+<div style="position:absolute;left:36.28px;top:98.51px" class="cls_018"><span class="cls_018">muscles.</span></div>
+<div style="position:absolute;left:215.84px;top:105.17px" class="cls_009"><span class="cls_009">(Jordaens now says: “Those things</span></div>
+<div style="position:absolute;left:406.06px;top:105.17px" class="cls_009"><span class="cls_009">percent of the patients”.</span></div>
+<div style="position:absolute;left:215.84px;top:117.17px" class="cls_009"><span class="cls_009">should have worked.”) Then they</span></div>
+<div style="position:absolute;left:418.06px;top:117.17px" class="cls_009"><span class="cls_009">The balloon is improved on the</span></div>
+<div style="position:absolute;left:161.93px;top:122.18px" class="cls_018"><span class="cls_018">Disruptive</span></div>
+<div style="position:absolute;left:165.93px;top:131.18px" class="cls_018"><span class="cls_018">impulses</span></div>
+<div style="position:absolute;left:215.84px;top:129.17px" class="cls_009"><span class="cls_009">tried  a  different  sized  balloon.</span></div>
+<div style="position:absolute;left:406.06px;top:129.17px" class="cls_009"><span class="cls_009">basis of the experiences in studies</span></div>
+<div style="position:absolute;left:215.84px;top:141.17px" class="cls_009"><span class="cls_009">Bang. One over the other, try that.</span></div>
+<div style="position:absolute;left:406.06px;top:141.17px" class="cls_009"><span class="cls_009">such  as  the  one  carried  out  in</span></div>
+<div style="position:absolute;left:215.84px;top:153.17px" class="cls_009"><span class="cls_009">Bang. A pair of pincers, where are</span></div>
+<div style="position:absolute;left:406.06px;top:153.17px" class="cls_009"><span class="cls_009">Rotterdam.  Cryocath  altered  the</span></div>
+<div style="position:absolute;left:159.26px;top:165.58px" class="cls_018"><span class="cls_018">Pulmonary</span></div>
+<div style="position:absolute;left:215.84px;top:165.17px" class="cls_009"><span class="cls_009">the pincers? Someone stood on the</span></div>
+<div style="position:absolute;left:406.06px;top:165.17px" class="cls_009"><span class="cls_009">product information on the balloon</span></div>
+<div style="position:absolute;left:182.82px;top:174.58px" class="cls_018"><span class="cls_018">vein</span></div>
+<div style="position:absolute;left:215.84px;top:177.17px" class="cls_009"><span class="cls_009">catheter.  In  his  memory,  fifteen</span></div>
+<div style="position:absolute;left:406.06px;top:177.17px" class="cls_009"><span class="cls_009">after   the   incident   with   Hans</span></div>
+<div style="position:absolute;left:215.84px;top:189.17px" class="cls_009"><span class="cls_009">perhaps twenty balloons burst next</span></div>
+<div style="position:absolute;left:406.06px;top:189.17px" class="cls_009"><span class="cls_009">Westerweel’s ruptured pulmonary</span></div>
+<div style="position:absolute;left:215.84px;top:201.17px" class="cls_009"><span class="cls_009">to his heart. Bang. Bang. Towards</span></div>
+<div style="position:absolute;left:406.06px;top:201.17px" class="cls_009"><span class="cls_009">artery.  It  also  later  altered  the</span></div>
+<div style="position:absolute;left:35.58px;top:209.38px" class="cls_018"><span class="cls_018">Atrium</span></div>
+<div style="position:absolute;left:215.84px;top:213.17px" class="cls_009"><span class="cls_009">evening he thought death would</span></div>
+<div style="position:absolute;left:406.06px;top:213.17px" class="cls_009"><span class="cls_009">shape,   the   balloon   was   made</span></div>
+<div style="position:absolute;left:215.84px;top:225.17px" class="cls_009"><span class="cls_009">release him.</span></div>
+<div style="position:absolute;left:406.06px;top:225.17px" class="cls_009"><span class="cls_009">softer, the circulation of the cold</span></div>
+<div style="position:absolute;left:227.84px;top:237.17px" class="cls_009"><span class="cls_009">He also was placed on intensive</span></div>
+<div style="position:absolute;left:406.06px;top:237.17px" class="cls_009"><span class="cls_009">within the balloon was improved.</span></div>
+<div style="position:absolute;left:215.84px;top:249.17px" class="cls_009"><span class="cls_009">care.  For  days  he  was  vomiting</span></div>
+<div style="position:absolute;left:406.06px;top:249.17px" class="cls_009"><span class="cls_009">The doctors became more skilled.</span></div>
+<div style="position:absolute;left:215.84px;top:261.17px" class="cls_009"><span class="cls_009">blood, half a bowl a day. Each breath</span></div>
+<div style="position:absolute;left:406.06px;top:261.17px" class="cls_009"><span class="cls_009">At what point did the young PhD</span></div>
+<div style="position:absolute;left:215.84px;top:273.17px" class="cls_009"><span class="cls_009">brought with it an internal bubbling</span></div>
+<div style="position:absolute;left:406.06px;top:273.17px" class="cls_009"><span class="cls_009">student feel like he was getting the</span></div>
+<div style="position:absolute;left:215.84px;top:285.17px" class="cls_009"><span class="cls_009">sensation. His chest was black and</span></div>
+<div style="position:absolute;left:406.06px;top:285.17px" class="cls_009"><span class="cls_009">hang of the technique? Van Belle:</span></div>
+<div style="position:absolute;left:36.28px;top:300.98px" class="cls_019"><span class="cls_019">Standard procedure</span></div>
+<div style="position:absolute;left:215.84px;top:297.17px" class="cls_009"><span class="cls_009">blue from the bruising. For the first</span></div>
+<div style="position:absolute;left:406.06px;top:297.17px" class="cls_009"><span class="cls_009">“After  about  twenty  procedures</span></div>
+<div style="position:absolute;left:215.84px;top:309.17px" class="cls_009"><span class="cls_009">two months after surgery he could</span></div>
+<div style="position:absolute;left:406.06px;top:309.17px" class="cls_009"><span class="cls_009">you start to notice that they go</span></div>
+<div style="position:absolute;left:215.84px;top:321.17px" class="cls_009"><span class="cls_009">only sleep in a seated position. The</span></div>
+<div style="position:absolute;left:406.06px;top:321.17px" class="cls_009"><span class="cls_009">more smoothly and that you get the</span></div>
+<div style="position:absolute;left:215.84px;top:333.17px" class="cls_009"><span class="cls_009">doctors dismissed his complaints.</span></div>
+<div style="position:absolute;left:406.06px;top:333.17px" class="cls_009"><span class="cls_009">job done without problems.” And</span></div>
+<div style="position:absolute;left:215.84px;top:345.17px" class="cls_009"><span class="cls_009">One even said that perhaps it was</span></div>
+<div style="position:absolute;left:406.06px;top:345.17px" class="cls_009"><span class="cls_009">at what point did he feel like he had</span></div>
+<div style="position:absolute;left:215.84px;top:357.17px" class="cls_009"><span class="cls_009">the weather that was causing them.</span></div>
+<div style="position:absolute;left:406.06px;top:357.17px" class="cls_009"><span class="cls_009">really mastered it? “After about a</span></div>
+<div style="position:absolute;left:215.84px;top:369.17px" class="cls_009"><span class="cls_009">That was the first time he lost his</span></div>
+<div style="position:absolute;left:406.06px;top:369.17px" class="cls_009"><span class="cls_009">hundred procedures, then it went</span></div>
+<div style="position:absolute;left:215.84px;top:381.17px" class="cls_009"><span class="cls_009">temper.  He  can’t  sleep  and  has</span></div>
+<div style="position:absolute;left:406.06px;top:381.17px" class="cls_009"><span class="cls_009">very smoothly.”</span></div>
+<div style="position:absolute;left:215.84px;top:393.17px" class="cls_009"><span class="cls_009">suffered from trauma “for many</span></div>
+<div style="position:absolute;left:418.06px;top:393.17px" class="cls_009"><span class="cls_009">In  the  summer  of</span></div>
+<div style="position:absolute;left:515.32px;top:393.17px" class="cls_009"><span class="cls_009">2008  the</span></div>
+<div style="position:absolute;left:215.84px;top:405.17px" class="cls_009"><span class="cls_009">years”, says his wife. He looks at</span></div>
+<div style="position:absolute;left:406.06px;top:405.17px" class="cls_009"><span class="cls_009">Germans were the first to publish</span></div>
+<div style="position:absolute;left:215.84px;top:417.17px" class="cls_009"><span class="cls_009">her. “Yes, well”, he says.</span></div>
+<div style="position:absolute;left:406.06px;top:417.17px" class="cls_009"><span class="cls_009">on a large-scale study. They wrote</span></div>
+<div style="position:absolute;left:227.84px;top:429.17px" class="cls_009"><span class="cls_009">In</span></div>
+<div style="position:absolute;left:255.73px;top:429.17px" class="cls_009"><span class="cls_009">the</span></div>
+<div style="position:absolute;left:287.92px;top:429.17px" class="cls_009"><span class="cls_009">two     Rotterdam</span></div>
+<div style="position:absolute;left:406.06px;top:429.17px" class="cls_009"><span class="cls_009">that   the   heart   complaints   had</span></div>
+<div style="position:absolute;left:215.84px;top:441.17px" class="cls_009"><span class="cls_009">publications  which  were  written</span></div>
+<div style="position:absolute;left:406.06px;top:441.17px" class="cls_009"><span class="cls_009">disappeared in seven to eight of</span></div>
+<div style="position:absolute;left:215.84px;top:453.17px" class="cls_009"><span class="cls_009">on the study and which appear in</span></div>
+<div style="position:absolute;left:406.06px;top:453.17px" class="cls_009"><span class="cls_009">the ten patients. The Rotterdam</span></div>
+<div style="position:absolute;left:215.84px;top:465.17px" class="cls_009"><span class="cls_009">Van Belle’s thesis, the surgery is</span></div>
+<div style="position:absolute;left:406.06px;top:465.17px" class="cls_009"><span class="cls_009">doctors only published their results</span></div>
+<div style="position:absolute;left:215.84px;top:477.17px" class="cls_009"><span class="cls_009">rather coolly labeled as ‘equipment</span></div>
+<div style="position:absolute;left:406.06px;top:477.17px" class="cls_009"><span class="cls_009">in the autumn of that year. Their</span></div>
+<div style="position:absolute;left:36.28px;top:482.58px" class="cls_018"><span class="cls_018">A catheter makes it way to the heart via the</span></div>
+<div style="position:absolute;left:36.28px;top:491.58px" class="cls_018"><span class="cls_018">groin artery. Small scars are made around the</span></div>
+<div style="position:absolute;left:215.84px;top:489.17px" class="cls_009"><span class="cls_009">failure’. The doctors learned that</span></div>
+<div style="position:absolute;left:406.06px;top:489.17px" class="cls_009"><span class="cls_009">results   were   also   less   positive,</span></div>
+<div style="position:absolute;left:36.28px;top:500.58px" class="cls_018"><span class="cls_018">artery.</span></div>
+<div style="position:absolute;left:215.84px;top:501.17px" class="cls_009"><span class="cls_009">day that in the future they would</span></div>
+<div style="position:absolute;left:406.06px;top:501.17px" class="cls_009"><span class="cls_009">around  six  in  ten  patients  were</span></div>
+<div style="position:absolute;left:215.84px;top:513.17px" class="cls_009"><span class="cls_009">need  to  have  an  extra  freezing</span></div>
+<div style="position:absolute;left:406.06px;top:513.17px" class="cls_009"><span class="cls_009">symptom free. Furthermore, their</span></div>
+<div style="position:absolute;left:36.28px;top:518.58px" class="cls_019"><span class="cls_019">Cryoballoon procedure</span></div>
+<div style="position:absolute;left:215.84px;top:525.17px" class="cls_009"><span class="cls_009">machine present and that’s what</span></div>
+<div style="position:absolute;left:406.06px;top:525.17px" class="cls_009"><span class="cls_009">publication is accompanied by the</span></div>
+<div style="position:absolute;left:215.84px;top:537.17px" class="cls_009"><span class="cls_009">happened. Did the farmer know</span></div>
+<div style="position:absolute;left:406.06px;top:537.17px" class="cls_009"><span class="cls_009">critical commentary of the French</span></div>
+<div style="position:absolute;left:215.84px;top:549.17px" class="cls_009"><span class="cls_009">that  he  was  participating  in  a</span></div>
+<div style="position:absolute;left:406.06px;top:549.17px" class="cls_009"><span class="cls_009">cardiologist.</span></div>
+<div style="position:absolute;left:466.03px;top:549.17px" class="cls_009"><span class="cls_009">“That was not well-</span></div>
+<div style="position:absolute;left:215.84px;top:561.17px" class="cls_009"><span class="cls_009">clinical trial? No, he and his wife say</span></div>
+<div style="position:absolute;left:406.06px;top:561.17px" class="cls_009"><span class="cls_009">received by Cryocath”, Van Belle</span></div>
+<div style="position:absolute;left:215.84px;top:573.17px" class="cls_009"><span class="cls_009">emphatically. Was he told anything</span></div>
+<div style="position:absolute;left:406.06px;top:573.17px" class="cls_009"><span class="cls_009">remembers. He was not invited by</span></div>
+<div style="position:absolute;left:215.84px;top:585.17px" class="cls_009"><span class="cls_009">about a balloon? “No. Nothing.”</span></div>
+<div style="position:absolute;left:406.06px;top:585.17px" class="cls_009"><span class="cls_009">them to discuss the results. The</span></div>
+<div style="position:absolute;left:215.84px;top:597.17px" class="cls_009"><span class="cls_009">About any possible complications?</span></div>
+<div style="position:absolute;left:406.06px;top:597.17px" class="cls_009"><span class="cls_009">Germans, on the other hand, were.</span></div>
+<div style="position:absolute;left:215.84px;top:609.17px" class="cls_009"><span class="cls_009">No.   The   new   procedure   was</span></div>
+<div style="position:absolute;left:406.06px;top:609.17px" class="cls_009"><span class="cls_009">“My  research  was  well-received</span></div>
+<div style="position:absolute;left:215.84px;top:621.17px" class="cls_009"><span class="cls_009">supposed to be better. Safer.</span></div>
+<div style="position:absolute;left:406.06px;top:621.17px" class="cls_009"><span class="cls_009">at  large  congresses,  but  it  was</span></div>
+<div style="position:absolute;left:406.06px;top:633.17px" class="cls_009"><span class="cls_009">the Germans who were standing</span></div>
+<div style="position:absolute;left:406.06px;top:645.17px" class="cls_009"><span class="cls_009">on  stage  actually  presenting  the</span></div>
+<div style="position:absolute;left:406.06px;top:657.17px" class="cls_009"><span class="cls_009">discussion  on  the  balloon.”  Did</span></div>
+<div style="position:absolute;left:241.35px;top:662.17px" class="cls_016"><span class="cls_016">A take-over worth</span></div>
+<div style="position:absolute;left:406.06px;top:669.17px" class="cls_009"><span class="cls_009">Cryocath ever try to influence the</span></div>
+<div style="position:absolute;left:263.54px;top:674.17px" class="cls_016"><span class="cls_016">millions</span></div>
+<div style="position:absolute;left:406.06px;top:681.17px" class="cls_009"><span class="cls_009">results? “No. They said: you can</span></div>
+<div style="position:absolute;left:36.28px;top:696.68px" class="cls_018"><span class="cls_018">A catheter makes it way to the heart via the</span></div>
+<div style="position:absolute;left:406.06px;top:693.17px" class="cls_009"><span class="cls_009">publish your findings, it’s just a</span></div>
+<div style="position:absolute;left:36.28px;top:705.68px" class="cls_018"><span class="cls_018">groin artery. A balloon is expanded at the</span></div>
+<div style="position:absolute;left:406.06px;top:705.17px" class="cls_009"><span class="cls_009">shame there is so little to publish.”</span></div>
+<div style="position:absolute;left:227.84px;top:709.17px" class="cls_009"><span class="cls_009">It is not known what became</span></div>
+<div style="position:absolute;left:36.28px;top:714.68px" class="cls_018"><span class="cls_018">opening of the artery which is subsequently</span></div>
+<div style="position:absolute;left:418.06px;top:717.17px" class="cls_009"><span class="cls_009">There’s  a  lot  at  stake  at  the</span></div>
+<div style="position:absolute;left:36.28px;top:723.68px" class="cls_018"><span class="cls_018">frozen for four minutes. A neat circle of scar</span></div>
+<div style="position:absolute;left:215.84px;top:721.17px" class="cls_009"><span class="cls_009">of  the  other</span></div>
+<div style="position:absolute;left:284.51px;top:721.17px" class="cls_009"><span class="cls_009">139  patients.  The</span></div>
+<div style="position:absolute;left:36.28px;top:732.68px" class="cls_018"><span class="cls_018">tissue is formed.</span></div>
+<div style="position:absolute;left:406.06px;top:729.17px" class="cls_009"><span class="cls_009">time for the company. It’s going</span></div>
+<div style="position:absolute;left:215.84px;top:733.17px" class="cls_009"><span class="cls_009">publication in 2008 in the journal</span></div>
+<div style="position:absolute;left:406.06px;top:741.17px" class="cls_009"><span class="cls_009">through a period of speedy growth.</span></div>
+<div style="position:absolute;left:215.84px;top:745.17px" class="cls_013"><span class="cls_013">Europace</span></div>
+<div style="position:absolute;left:279.42px;top:745.17px" class="cls_009"><span class="cls_009">reported</span></div>
+<div style="position:absolute;left:338.13px;top:745.17px" class="cls_009"><span class="cls_009">around</span></div>
+<div style="position:absolute;left:406.06px;top:753.17px" class="cls_009"><span class="cls_009">The professors on the front-line,</span></div>
+<div style="position:absolute;left:215.84px;top:757.17px" class="cls_009"><span class="cls_009">thirteen</span></div>
+<div style="position:absolute;left:269.33px;top:757.17px" class="cls_009"><span class="cls_009">complications;</span></div>
+<div style="position:absolute;left:352.44px;top:757.17px" class="cls_009"><span class="cls_009">Van</span></div>
+<div style="position:absolute;left:406.06px;top:765.17px" class="cls_009"><span class="cls_009">like Jordaens, are responsible for</span></div>
+<div style="position:absolute;left:215.84px;top:769.17px" class="cls_009"><span class="cls_009">der  Slikke’s  complication  is  not</span></div>
+<div style="position:absolute;left:406.06px;top:777.17px" class="cls_009"><span class="cls_009">training  doctors  selected  by  the</span></div>
+<div style="position:absolute;left:215.84px;top:781.17px" class="cls_009"><span class="cls_009">included. In a commentary listed</span></div>
+<div style="position:absolute;left:406.06px;top:789.17px" class="cls_009"><span class="cls_009">company. The then CEO Keltjens</span></div>
+<div style="position:absolute;left:215.84px;top:793.17px" class="cls_009"><span class="cls_009">along  with  the  publication  the</span></div>
+<div style="position:absolute;left:565.28px;top:812.56px" class="cls_006"><span class="cls_006">6</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5106px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="818e5324-59b7-11e8-b174-0cc47a792c0a_id_818e5324-59b7-11e8-b174-0cc47a792c0a_files/background7.jpg" width=595 height=841></div>
+<div style="position:absolute;left:507.88px;top:12.61px" class="cls_003"><span class="cls_003">NRC</span><span class="cls_004">Weekend</span></div>
+<div style="position:absolute;left:35.28px;top:11.70px" class="cls_002"><span class="cls_002">Weekend</span></div>
+<div style="position:absolute;left:381.23px;top:22.62px" class="cls_005"><span class="cls_005">SATURDAY 24 SEPTEMBER & SUNDAY 25 SEPTEMBER 2016</span></div>
+<div style="position:absolute;left:35.00px;top:56.67px" class="cls_009"><span class="cls_009">said: “Slowly we built up a sales force.” However, the</span></div>
+<div style="position:absolute;left:315.14px;top:56.67px" class="cls_009"><span class="cls_009">Then suddenly they said that the study had not taken</span></div>
+<div style="position:absolute;left:35.00px;top:68.67px" class="cls_009"><span class="cls_009">introductory losses are too high. And then one day the</span></div>
+<div style="position:absolute;left:315.14px;top:68.67px" class="cls_009"><span class="cls_009">place at all: the surgery and the measurements “were</span></div>
+<div style="position:absolute;left:35.00px;top:80.67px" class="cls_009"><span class="cls_009">American company Medtronic arrives on the doorstep.</span></div>
+<div style="position:absolute;left:315.14px;top:80.67px" class="cls_009"><span class="cls_009">carried out in the interest of the patients and not as part</span></div>
+<div style="position:absolute;left:35.00px;top:92.67px" class="cls_009"><span class="cls_009">It is the world’s largest producer of medical devices. On</span></div>
+<div style="position:absolute;left:315.14px;top:92.67px" class="cls_009"><span class="cls_009">of a research” (dean and board member Jaap Verweij,</span></div>
+<div style="position:absolute;left:35.00px;top:104.67px" class="cls_009"><span class="cls_009">the 25th of September Medtronic announced that it was</span></div>
+<div style="position:absolute;left:315.14px;top:104.67px" class="cls_009"><span class="cls_009">November 2013). Then the hospital declares that study</span></div>
+<div style="position:absolute;left:35.00px;top:116.67px" class="cls_009"><span class="cls_009">buying Cryocath, which at the time had a turnover of 38</span></div>
+<div style="position:absolute;left:315.14px;top:116.67px" class="cls_009"><span class="cls_009">had taken place, though it concerned a retrospective</span></div>
+<div style="position:absolute;left:35.00px;top:128.67px" class="cls_009"><span class="cls_009">million American dollars, for 380 million dollars.</span></div>
+<div style="position:absolute;left:315.14px;top:128.67px" class="cls_009"><span class="cls_009">study. That is a study whereby doctors decide afterwards</span></div>
+<div style="position:absolute;left:47.00px;top:140.67px" class="cls_009"><span class="cls_009">Keltjens: “I remember the phone call well. I was in</span></div>
+<div style="position:absolute;left:315.14px;top:140.67px" class="cls_009"><span class="cls_009">on a rainy day that all 141 surgeries and intensive</span></div>
+<div style="position:absolute;left:35.00px;top:152.67px" class="cls_009"><span class="cls_009">Luc Jordaen’s office and saw that Medtronic called.</span></div>
+<div style="position:absolute;left:315.14px;top:152.67px" class="cls_009"><span class="cls_009">measurements could be interesting enough to publish</span></div>
+<div style="position:absolute;left:35.00px;top:164.67px" class="cls_009"><span class="cls_009">I stepped outside, onto the fire escape and then onto</span></div>
+<div style="position:absolute;left:315.14px;top:164.67px" class="cls_009"><span class="cls_009">on. More defensive arguments follow.</span></div>
+<div style="position:absolute;left:35.00px;top:176.67px" class="cls_009"><span class="cls_009">the roof. And that’s where I heard: we are going ahead</span></div>
+<div style="position:absolute;left:327.14px;top:176.67px" class="cls_009"><span class="cls_009">In a meeting this week both dean and board member</span></div>
+<div style="position:absolute;left:35.00px;top:188.67px" class="cls_009"><span class="cls_009">with the takeover.” His company has just recently gone</span></div>
+<div style="position:absolute;left:315.14px;top:188.67px" class="cls_009"><span class="cls_009">Jaap Verweij of the Erasmus MC and the current head</span></div>
+<div style="position:absolute;left:35.00px;top:200.67px" class="cls_009"><span class="cls_009">through a re-organization, the balloon is “about to</span></div>
+<div style="position:absolute;left:315.14px;top:200.67px" class="cls_009"><span class="cls_009">of department of Cardiology Felix Zijlstra still argue</span></div>
+<div style="position:absolute;left:35.00px;top:212.67px" class="cls_009"><span class="cls_009">be put on the market in America” and the Rotterdam</span></div>
+<div style="position:absolute;left:315.14px;top:212.67px" class="cls_009"><span class="cls_009">that the patients did not have to know. Even by today’s</span></div>
+<div style="position:absolute;left:35.00px;top:224.67px" class="cls_009"><span class="cls_009">publication has just been accepted by an influential</span></div>
+<div style="position:absolute;left:315.14px;top:224.67px" class="cls_009"><span class="cls_009">standards. However, they did say that nowadays things</span></div>
+<div style="position:absolute;left:35.00px;top:236.67px" class="cls_009"><span class="cls_009">journal. Keltjens now says: “If the study had shown</span></div>
+<div style="position:absolute;left:315.14px;top:236.67px" class="cls_009"><span class="cls_009">are done differently. Patients are better informed. All</span></div>
+<div style="position:absolute;left:35.00px;top:248.67px" class="cls_009"><span class="cls_009">that the balloon didn’t work properly, then the takeover</span></div>
+<div style="position:absolute;left:315.14px;top:248.67px" class="cls_009"><span class="cls_009">studies are submitted to the committee.</span></div>
+<div style="position:absolute;left:35.00px;top:260.67px" class="cls_009"><span class="cls_009">would never have taken place.”</span></div>
+<div style="position:absolute;left:327.14px;top:260.67px" class="cls_009"><span class="cls_009">The patients did not need to be informed since they</span></div>
+<div style="position:absolute;left:47.00px;top:272.67px" class="cls_009"><span class="cls_009">Therefore, thanks to the 141 patients in Rotterdam</span></div>
+<div style="position:absolute;left:315.14px;top:272.67px" class="cls_009"><span class="cls_009">would not experience an extra burden, is the argument</span></div>
+<div style="position:absolute;left:35.00px;top:284.67px" class="cls_009"><span class="cls_009">there were two scientific publications and a PhD thesis,</span></div>
+<div style="position:absolute;left:315.14px;top:284.67px" class="cls_009"><span class="cls_009">given. After all, the surgery and the measurements</span></div>
+<div style="position:absolute;left:35.00px;top:296.67px" class="cls_009"><span class="cls_009">a better and safer and in turn more profitable product</span></div>
+<div style="position:absolute;left:315.14px;top:296.67px" class="cls_009"><span class="cls_009">were necessary procedures anyway. Do patients who</span></div>
+<div style="position:absolute;left:35.00px;top:308.67px" class="cls_009"><span class="cls_009">and an international takeover worth millions. Does</span></div>
+<div style="position:absolute;left:315.14px;top:308.67px" class="cls_009"><span class="cls_009">nowadays undergo the surgery still have to monitor</span></div>
+<div style="position:absolute;left:35.00px;top:320.67px" class="cls_009"><span class="cls_009">Jordaens now think in retrospect that he should have</span></div>
+<div style="position:absolute;left:315.14px;top:320.67px" class="cls_009"><span class="cls_009">and forward their heart rhythm at least once daily both</span></div>
+<div style="position:absolute;left:35.00px;top:332.67px" class="cls_009"><span class="cls_009">informed the patients more sufficiently? Yes, he says.</span></div>
+<div style="position:absolute;left:315.14px;top:332.67px" class="cls_009"><span class="cls_009">before and for four months after surgery? Verweij: “Yes,</span></div>
+<div style="position:absolute;left:35.00px;top:344.67px" class="cls_009"><span class="cls_009">Not only because of the surgery involved, though also</span></div>
+<div style="position:absolute;left:315.14px;top:344.67px" class="cls_009"><span class="cls_009">they do”. The current extensive on-site patient brochure</span></div>
+<div style="position:absolute;left:35.00px;top:356.67px" class="cls_009"><span class="cls_009">because the patients were required to monitor and</span></div>
+<div style="position:absolute;left:315.14px;top:356.67px" class="cls_009"><span class="cls_009">states that patients must monitor and forward their</span></div>
+<div style="position:absolute;left:35.00px;top:368.67px" class="cls_009"><span class="cls_009">forward their heart rhythm for one to three months post-</span></div>
+<div style="position:absolute;left:315.14px;top:368.67px" class="cls_009"><span class="cls_009">heart rhythm every day for one month and then later</span></div>
+<div style="position:absolute;left:35.00px;top:380.67px" class="cls_009"><span class="cls_009">surgery from their own home. That is imposing rules of</span></div>
+<div style="position:absolute;left:315.14px;top:380.67px" class="cls_009"><span class="cls_009">again for one month. According to the hospital, the</span></div>
+<div style="position:absolute;left:35.00px;top:392.67px" class="cls_009"><span class="cls_009">behavior. He says that he “absolutely” got carried away</span></div>
+<div style="position:absolute;left:315.14px;top:392.67px" class="cls_009"><span class="cls_009">Dutch Healthcare Inspectorate was not informed of the</span></div>
+<div style="position:absolute;left:35.00px;top:404.67px" class="cls_009"><span class="cls_009">by his enthusiasm for the balloon. “When we published</span></div>
+<div style="position:absolute;left:315.14px;top:404.67px" class="cls_009"><span class="cls_009">incidents as it only concerned “expected complications”.</span></div>
+<div style="position:absolute;left:35.00px;top:416.67px" class="cls_009"><span class="cls_009">on the 141 patients and I realized that we couldn’t say</span></div>
+<div style="position:absolute;left:327.14px;top:416.67px" class="cls_009"><span class="cls_009">Hans Westerweel lost his job. The complications</span></div>
+<div style="position:absolute;left:35.00px;top:428.67px" class="cls_009"><span class="cls_009">that a medical research ethics committee was involved,</span></div>
+<div style="position:absolute;left:315.14px;top:428.67px" class="cls_009"><span class="cls_009">made it impossible for him to continue working. Piet</span></div>
+<div style="position:absolute;left:35.00px;top:440.67px" class="cls_009"><span class="cls_009">I saw this as a very significant shortcoming. I can never</span></div>
+<div style="position:absolute;left:315.14px;top:440.67px" class="cls_009"><span class="cls_009">van der Slikke continued to suffer from heart problems.</span></div>
+<div style="position:absolute;left:35.00px;top:452.67px" class="cls_009"><span class="cls_009">allow the same thing to happen again, I thought.”</span></div>
+<div style="position:absolute;left:315.14px;top:452.67px" class="cls_009"><span class="cls_009">A cardiologist in Maastricht had to carry out new</span></div>
+<div style="position:absolute;left:315.14px;top:464.67px" class="cls_009"><span class="cls_009">surgery, this time with the heated catheter method. He</span></div>
+<div style="position:absolute;left:315.14px;top:476.67px" class="cls_009"><span class="cls_009">told him up front what he could expect, even possibly a</span></div>
+<div style="position:absolute;left:315.14px;top:488.67px" class="cls_009"><span class="cls_009">heart attack, and that’s what happened. But that’s not</span></div>
+<div style="position:absolute;left:88.37px;top:493.67px" class="cls_016"><span class="cls_016">Whole and half truths</span></div>
+<div style="position:absolute;left:315.14px;top:500.67px" class="cls_009"><span class="cls_009">what bothers him the most: “If you are told up front</span></div>
+<div style="position:absolute;left:315.14px;top:512.67px" class="cls_009"><span class="cls_009">what to expect, then it makes it easier to accept it than if</span></div>
+<div style="position:absolute;left:315.14px;top:524.67px" class="cls_009"><span class="cls_009">you hear afterwards that you were used as a guinea pig.”</span></div>
+<div style="position:absolute;left:47.00px;top:528.67px" class="cls_009"><span class="cls_009">The  Erasmus  MC  does  not  agree.  Westerweel</span></div>
+<div style="position:absolute;left:35.00px;top:540.67px" class="cls_009"><span class="cls_009">maintained extensive correspondence with the hospital</span></div>
+<div style="position:absolute;left:35.00px;top:552.67px" class="cls_009"><span class="cls_009">for many years in which he was given whole and half-</span></div>
+<div style="position:absolute;left:35.00px;top:564.67px" class="cls_009"><span class="cls_009">truths. It all came down to the following: neither he</span></div>
+<div style="position:absolute;left:35.00px;top:576.67px" class="cls_009"><span class="cls_009">nor the other patients needed to know that they were</span></div>
+<div style="position:absolute;left:35.00px;top:588.67px" class="cls_009"><span class="cls_009">participating  in  a  medical  study,  according  to  the</span></div>
+<div style="position:absolute;left:35.00px;top:600.67px" class="cls_009"><span class="cls_009">hospital.</span></div>
+<div style="position:absolute;left:47.00px;top:612.67px" class="cls_009"><span class="cls_009">At first they argued that Westerweel “was not part of</span></div>
+<div style="position:absolute;left:35.00px;top:624.67px" class="cls_009"><span class="cls_009">this study” (hospital lawyer, May 2013). Though both</span></div>
+<div style="position:absolute;left:35.00px;top:636.67px" class="cls_009"><span class="cls_009">researchers confirmed that he was part of the study.</span></div>
+<div style="position:absolute;left:565.28px;top:812.56px" class="cls_006"><span class="cls_006">7</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5957px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="818e5324-59b7-11e8-b174-0cc47a792c0a_id_818e5324-59b7-11e8-b174-0cc47a792c0a_files/background8.jpg" width=595 height=841></div>
+<div style="position:absolute;left:507.88px;top:12.61px" class="cls_003"><span class="cls_003">NRC</span><span class="cls_004">Weekend</span></div>
+<div style="position:absolute;left:35.28px;top:11.70px" class="cls_002"><span class="cls_002">Weekend</span></div>
+<div style="position:absolute;left:381.23px;top:22.62px" class="cls_005"><span class="cls_005">SATURDAY 24 SEPTEMBER & SUNDAY 25 SEPTEMBER 2016</span></div>
+<div style="position:absolute;left:35.64px;top:56.39px" class="cls_011"><span class="cls_011">INFORMATION OBLIGATION</span></div>
+<div style="position:absolute;left:35.64px;top:83.99px" class="cls_007"><span class="cls_007">Patients are supposed to be</span></div>
+<div style="position:absolute;left:35.64px;top:117.59px" class="cls_007"><span class="cls_007">informed of a clinical trial</span></div>
+<div style="position:absolute;left:48.00px;top:166.28px" class="cls_009"><span class="cls_009">The rights of patients who participate in a clinical trial</span></div>
+<div style="position:absolute;left:308.14px;top:166.28px" class="cls_009"><span class="cls_009">Only later were the research data collected and published.</span></div>
+<div style="position:absolute;left:36.00px;top:178.28px" class="cls_009"><span class="cls_009">were laid down in 1964 in the </span><span class="cls_020">Declaration of Helsinki</span><span class="cls_009">.</span></div>
+<div style="position:absolute;left:308.14px;top:178.28px" class="cls_009"><span class="cls_009">“Observational research does not fall under the scope</span></div>
+<div style="position:absolute;left:36.00px;top:190.28px" class="cls_009"><span class="cls_009">It states that the patients’ interests must always come</span></div>
+<div style="position:absolute;left:308.14px;top:190.28px" class="cls_009"><span class="cls_009">of the law”, says Verweij, “as patients do not undergo a</span></div>
+<div style="position:absolute;left:36.00px;top:202.28px" class="cls_009"><span class="cls_009">before the interest of the medical research. It is for</span></div>
+<div style="position:absolute;left:308.14px;top:202.28px" class="cls_009"><span class="cls_009">different treatment as part of the research”.</span></div>
+<div style="position:absolute;left:36.00px;top:214.28px" class="cls_009"><span class="cls_009">this reason that patients are always required to sign an</span></div>
+<div style="position:absolute;left:36.00px;top:226.28px" class="cls_009"><span class="cls_009">‘informed consent’ before the trial takes place. By doing</span></div>
+<div style="position:absolute;left:308.14px;top:226.28px" class="cls_020"><span class="cls_020">The experts’ view:</span></div>
+<div style="position:absolute;left:36.00px;top:238.28px" class="cls_009"><span class="cls_009">so they declare they have been fully informed on the aim</span></div>
+<div style="position:absolute;left:320.14px;top:238.28px" class="cls_009"><span class="cls_009">The   AMC’s   professor   of   medical   law </span><span class="cls_020">  Johan</span></div>
+<div style="position:absolute;left:36.00px;top:250.28px" class="cls_009"><span class="cls_009">and possible risks of the trial and agree to these.</span></div>
+<div style="position:absolute;left:308.14px;top:250.28px" class="cls_020"><span class="cls_020">Legemaate</span><span class="cls_009"> says that in this case you cannot maintain</span></div>
+<div style="position:absolute;left:48.00px;top:262.28px" class="cls_009"><span class="cls_009">In the Netherlands, these basic principles have been</span></div>
+<div style="position:absolute;left:308.14px;top:262.28px" class="cls_009"><span class="cls_009">that  it  was  only  an  observational  research.</span></div>
+<div style="position:absolute;left:522.63px;top:262.28px" class="cls_009"><span class="cls_009">“In  this</span></div>
+<div style="position:absolute;left:36.00px;top:274.28px" class="cls_009"><span class="cls_009">embedded since 1999 in the</span><span class="cls_020"> Dutch Medical Research</span></div>
+<div style="position:absolute;left:308.14px;top:274.28px" class="cls_009"><span class="cls_009">case it appears to relate to a new technique, whereby a</span></div>
+<div style="position:absolute;left:36.00px;top:286.28px" class="cls_020"><span class="cls_020">Involving Human Subjects Act </span><span class="cls_009">(Dutch abbr.: WMO).</span></div>
+<div style="position:absolute;left:308.14px;top:286.28px" class="cls_009"><span class="cls_009">foreign object is placed in the body of a patient. Such</span></div>
+<div style="position:absolute;left:36.00px;top:298.28px" class="cls_009"><span class="cls_009">It states that doctors who want to carry out a clinical</span></div>
+<div style="position:absolute;left:308.14px;top:298.28px" class="cls_009"><span class="cls_009">an intervention falls within the scope of the Dutch law.”</span></div>
+<div style="position:absolute;left:36.00px;top:310.28px" class="cls_009"><span class="cls_009">trial must have prior approval by an accredited medical</span></div>
+<div style="position:absolute;left:308.14px;top:310.28px" class="cls_009"><span class="cls_009">Furthermore, he believes the Erasmus MC’s argument is</span></div>
+<div style="position:absolute;left:36.00px;top:322.28px" class="cls_009"><span class="cls_009">research ethics committee (MREC). These committees fall</span></div>
+<div style="position:absolute;left:308.14px;top:322.28px" class="cls_009"><span class="cls_009">not logical. “Why would you want to study the safety and</span></div>
+<div style="position:absolute;left:36.00px;top:334.28px" class="cls_009"><span class="cls_009">under the supervision of the national Central Committee</span></div>
+<div style="position:absolute;left:308.14px;top:334.28px" class="cls_009"><span class="cls_009">effectiveness of a technique if the treatment is a regular</span></div>
+<div style="position:absolute;left:36.00px;top:346.28px" class="cls_009"><span class="cls_009">on Research Involving Human Subjects (Dutch abbr.:</span></div>
+<div style="position:absolute;left:308.14px;top:346.28px" class="cls_009"><span class="cls_009">one?”</span></div>
+<div style="position:absolute;left:36.00px;top:358.28px" class="cls_009"><span class="cls_009">CCMO). Medical research is a study whereby human</span></div>
+<div style="position:absolute;left:320.14px;top:358.28px" class="cls_020"><span class="cls_020">Marcel Kenter </span><span class="cls_009">was director of the Central Committee</span></div>
+<div style="position:absolute;left:36.00px;top:370.28px" class="cls_009"><span class="cls_009">subjects are subjected to procedures or are required to</span></div>
+<div style="position:absolute;left:308.14px;top:370.28px" class="cls_009"><span class="cls_009">Involving Research with Human Subjects (Dutch abbr.:</span></div>
+<div style="position:absolute;left:36.00px;top:382.28px" class="cls_009"><span class="cls_009">follow rules of behavior. This type of research therefore</span></div>
+<div style="position:absolute;left:308.14px;top:382.28px" class="cls_009"><span class="cls_009">CCMO) when the research into the balloon was being</span></div>
+<div style="position:absolute;left:36.00px;top:394.28px" class="cls_009"><span class="cls_009">falls under this legislation. However, the legislation leaves</span></div>
+<div style="position:absolute;left:308.14px;top:394.28px" class="cls_009"><span class="cls_009">carried out. According to him the aim of the research</span></div>
+<div style="position:absolute;left:36.00px;top:406.28px" class="cls_009"><span class="cls_009">some room for interpretation. Say a hospital introduces a</span></div>
+<div style="position:absolute;left:308.14px;top:406.28px" class="cls_009"><span class="cls_009">“determines” whether it falls within the scope of the Dutch</span></div>
+<div style="position:absolute;left:36.00px;top:418.28px" class="cls_009"><span class="cls_009">new treatment which can be seen as a minor alteration</span></div>
+<div style="position:absolute;left:308.14px;top:418.28px" class="cls_009"><span class="cls_009">legislation: is the aim to increase the local quality health</span></div>
+<div style="position:absolute;left:36.00px;top:430.28px" class="cls_009"><span class="cls_009">of an existing one.  And that doctors only have to register</span></div>
+<div style="position:absolute;left:308.14px;top:430.28px" class="cls_009"><span class="cls_009">care in the hospital, or increasing scientific knowledge?</span></div>
+<div style="position:absolute;left:36.00px;top:442.28px" class="cls_009"><span class="cls_009">some patients’ data in order to be able to evaluate the</span></div>
+<div style="position:absolute;left:308.14px;top:442.28px" class="cls_009"><span class="cls_009">The researchers argue that it concerns a study whereby</span></div>
+<div style="position:absolute;left:36.00px;top:454.28px" class="cls_009"><span class="cls_009">treatment. This type of research does not fall under the</span></div>
+<div style="position:absolute;left:308.14px;top:454.28px" class="cls_009"><span class="cls_009">the aim and research method were pre-determined - a</span></div>
+<div style="position:absolute;left:36.00px;top:466.28px" class="cls_009"><span class="cls_009">scope of the legislation.</span></div>
+<div style="position:absolute;left:308.14px;top:466.28px" class="cls_009"><span class="cls_009">prospective study. “If the researchers themselves say</span></div>
+<div style="position:absolute;left:308.14px;top:478.28px" class="cls_009"><span class="cls_009">that it concerns a prospective study into the safety and</span></div>
+<div style="position:absolute;left:36.00px;top:490.68px" class="cls_010"><span class="cls_010">So, what is the case with the balloon study?</span></div>
+<div style="position:absolute;left:308.14px;top:490.28px" class="cls_009"><span class="cls_009">feasibility of the new balloon technique, then how can</span></div>
+<div style="position:absolute;left:308.14px;top:502.28px" class="cls_009"><span class="cls_009">you conclude that it is anything other than a study which</span></div>
+<div style="position:absolute;left:36.00px;top:516.68px" class="cls_020"><span class="cls_020">The Erasmus MC:</span></div>
+<div style="position:absolute;left:308.14px;top:514.28px" class="cls_009"><span class="cls_009">falls under the scope of the Medical Research Involving</span></div>
+<div style="position:absolute;left:48.00px;top:528.68px" class="cls_009"><span class="cls_009">According to the hospital a regular treatment was</span></div>
+<div style="position:absolute;left:308.14px;top:526.28px" class="cls_009"><span class="cls_009">Human Subjects Act?”</span></div>
+<div style="position:absolute;left:36.00px;top:540.68px" class="cls_009"><span class="cls_009">provided in this case. Not because it was similar to the</span></div>
+<div style="position:absolute;left:36.00px;top:552.68px" class="cls_009"><span class="cls_009">old one, though because the hospital had decided so mid-</span></div>
+<div style="position:absolute;left:36.00px;top:564.68px" class="cls_009"><span class="cls_009">August of that year. It was “a management decision”,</span></div>
+<div style="position:absolute;left:36.00px;top:576.68px" class="cls_009"><span class="cls_009">says the current head of Cardiology </span><span class="cls_020">Felix Zijlstra</span><span class="cls_009">. The</span></div>
+<div style="position:absolute;left:36.00px;top:588.68px" class="cls_009"><span class="cls_009">decision was not made on the basis of publications in</span></div>
+<div style="position:absolute;left:36.00px;top:600.68px" class="cls_009"><span class="cls_009">medical journals though on “common sense”. Medical</span></div>
+<div style="position:absolute;left:36.00px;top:612.68px" class="cls_009"><span class="cls_009">research was not carried out on the patients, though on</span></div>
+<div style="position:absolute;left:36.00px;top:624.68px" class="cls_009"><span class="cls_009">“patients’ files”, says the dean and board member </span><span class="cls_020">Jaap</span></div>
+<div style="position:absolute;left:36.00px;top:636.68px" class="cls_020"><span class="cls_020">Verweij</span><span class="cls_009">. And it is for this reason that patients were not</span></div>
+<div style="position:absolute;left:36.00px;top:648.68px" class="cls_009"><span class="cls_009">unnecessarily burdened.</span></div>
+<div style="position:absolute;left:48.00px;top:660.68px" class="cls_009"><span class="cls_009">The study was observational. That is to say that the</span></div>
+<div style="position:absolute;left:36.00px;top:672.68px" class="cls_009"><span class="cls_009">patients didn’t have to undergo an intervention for the</span></div>
+<div style="position:absolute;left:36.00px;top:684.68px" class="cls_009"><span class="cls_009">study. The doctors kept records of the patients’ progress.</span></div>
+<div style="position:absolute;left:46.00px;top:731.59px" class="cls_009"><span class="cls_009">This article is a translation of the</span></div>
+<div style="position:absolute;left:46.00px;top:743.59px" class="cls_009"><span class="cls_009">news that was published in the Dutch</span></div>
+<div style="position:absolute;left:46.00px;top:755.59px" class="cls_009"><span class="cls_009">newspaper NRC Handelsblad on</span></div>
+<div style="position:absolute;left:46.00px;top:767.59px" class="cls_009"><span class="cls_009">Saturday September 24th 2016 with</span></div>
+<div style="position:absolute;left:46.00px;top:779.59px" class="cls_009"><span class="cls_009">permission from the publisher.</span></div>
+<div style="position:absolute;left:565.28px;top:812.56px" class="cls_006"><span class="cls_006">8</span></div>
+</div>
+
+</body>
+</html>
